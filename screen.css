@@ -30,6 +30,11 @@
   display: none;
 }
 
+#flexNav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .body {
   background-color: mediumslateblue;
   color: black;
