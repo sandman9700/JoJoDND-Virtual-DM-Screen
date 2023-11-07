@@ -1,0 +1,1220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+    <link rel="stylesheet" href="screen.css">
+    <script async src="screen.js"></script>
+
+    <title>JoJoDnD Virtual DM Screen</title>
+  </head>
+  <!--Thanks to Kyler and Maggy for your feedback and for making the website and the module respectfully.-->
+
+  <body class="body">
+    <nav class="navbar">
+
+      <div>
+        <a href="https://www.jojodnd.com/" class="nav-link" style="color:mediumpurple;">
+          <i class="bi-arrow-left"></i> Back To Home &nbsp;
+          <img src="/Assets/icon.webp" id="home-logo" alt="home_link">
+        </a>
+      </div>
+
+      <div id="navTitleWrapper">
+        <p style="color:mediumpurple;" class="display-heading h6 center" id="navTitle">
+        Sandman's Bizzare DM Screen
+        </p>
+      </div>
+
+      <div class="dropdown">
+  <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Jump to...
+  </button>
+  <ul class="dropdown-menu bg-warning">
+    <li><a class="dropdown-item" href="#1">Stat Conversions</a></li>
+    <li><a class="dropdown-item" href="#2">Vampire Energy Calc</a></li>
+    <li><a class="dropdown-item" href="#3">Key Rule Changes</a></li>
+    <li><a class="dropdown-item" href="#4">Feat Rules</a></li>
+    <li><a class="dropdown-item" href="#5">Stand Enrgy Tracker</a></li>
+    <li><a class="dropdown-item" href="#6">Attack Dice Reference</a></li>
+    <li><a class="dropdown-item" href="#7">Notes</a></li>
+    <li><a class="dropdown-item" href="#8">Random Tables</a></li>
+    <li><a class="dropdown-item" href="#9">WEapon Reference</a></li>
+  </ul>
+</div>
+    </nav>
+
+    <h1 class="display-title center">
+      Sandman's Bizzare DM Screen
+    </h1>
+    <h5 class="display-heading center">
+      by sandman
+    </h5>
+    <div class="content">
+      <h2 class="display-heading center">
+        Toggles
+      </h2>
+
+      <div id="toggleFlex">
+        <p id="statConv">- Stat Conversions</p>
+        <p id="vampCalc">- Vampire Energy Calculator</p>
+        <p id="ruleToggle">- Key Rule Changes</p>
+        <p id="featToggle">- Feat Rules</p>
+        <p id="nrg">- Stand Energy Tracker</p>
+        <p id="diceToggle">- Attack Dice Reference</p>
+        <p id="noteToggle">- Notes</p>
+        <p id="randToggle">- Random Tables</p>
+        <p id="weaponRef">- Weapon Reference</p>
+      </div>
+    </div>
+    <hr />
+    <h2 id="Stats" class="display-heading"><a id="1"></a>
+      Stand Stat Conversions
+    </h2>
+
+    <div id="statbox" class="content">
+      <p><i><small>
+            Stand stat modifiers equal the stat divided by 10, rounded down
+          </small>
+        </i>
+      </p>
+      <hr />
+      <h4 id="PowStats" class="display-heading center">
+        Power Type Stand Stats
+      </h4>
+      <table id="PowTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x4</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 id="RngStats" class="display-heading center">
+        Ranged Type Stand Stats
+      </h4>
+      <table id="RngTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x10</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="RemStats" class="display-heading center">
+        Remote Type Stand Stats
+      </h4>
+      <table id="RemTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="AblStats" class="display-heading center">
+        Ability Type Stand Stats
+      </h4>
+      <table id="AblTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x1</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x1</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x4</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x5</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="EnhStats" class="display-heading center">
+        Enchancement Type Stand Stats
+      </h4>
+      <table id="EnhTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x5</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="RevStats" class="display-heading center">
+        Revenge Type Stand Stats
+      </h4>
+      <table id="RevTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 id="IndStats" class="display-heading center">
+        Independent Type Stand Stats
+      </h4>
+      <table id="IndTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x0</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="HiveStats" class="display-heading center">
+        Hive Type Stand Stats
+      </h4>
+      <table id="HiveTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x8</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h4 id="ActStats" class="display-heading center">
+        Act Type Stand Stats
+      </h4>
+      <h6 class="ActTable display-heading center">
+        Act 0 Stand Stats
+      </h6>
+
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x0</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x0</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x0</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x0</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x0</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 1 Stand Stats
+      </h6>
+
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x8</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 2 Stand Stats
+      </h6>
+
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x3</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x5</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 3 Stand Stats
+      </h6>
+
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x4</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="QuirkyText" class="display-heading center">
+        Stand Stat Quirks?
+        <!--I need a better name-->
+      </h4>
+
+      <div id="QuirkyBox" class="content">
+        <ul>
+          <li>Stand Movement Speed in Meters = 2x Speed Mod</li>
+          <ul>
+            <li>Every 50 Speed your stand has you gain an extra attack</li>
+          </ul>
+          <li>Range in Meters = Range Modifer (Mininmum of 1 meter)</li>
+          <li>Stand Energy = SE Mod</li>
+          <ul>
+            <li>Stand Energy is only tracked in combat.</li>
+            <li>When outside of combat, your stand energy is infinite, but as soon as you enter combat it's inite again</li>
+          </ul>
+        </ul>
+      </div>
+      <hr />
+    </div>
+    <hr id="lineA" />
+    <h2 id="Vamp" class="display-heading"><a id="2"></a>
+      Vampire Energy Calculator</h2>
+
+    <div id="Calc" class="content">
+      <div id="VampireCalc" class="contentz"></div>
+      <div class="bg-warning btn-group">
+        <select class=" levelSelect form-select bg-warning">
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+          <option value="4">Level 4</option>
+          <option value="5">Level 5</option>
+          <option value="6">Level 6</option>
+          <option value="7">Level 7</option>
+          <option value="8">Level 8</option>
+          <option value="9">Level 9</option>
+          <option value="10">Level 10</option>
+          <option value="11">Level 11</option>
+          <option value="12">Level 12</option>
+          <option value="13">Level 13</option>
+          <option value="14">Level 14</option>
+          <option value="15">Level 15</option>
+          <option value="16">Level 16</option>
+          <option value="17">Level 17</option>
+          <option value="18">Level 18</option>
+          <option value="19">Level 19</option>
+          <option value="20">Level 20</option>
+
+        </select>
+        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Get Energy</button>
+        <ul class="dropdown-menu">
+
+          <li class="dropdown-item"><button type="button" id="addOne" class="btn btn-warning">(+1)</button></li>
+          <li class="dropdown-item"><button type="button" id="addTwo" class="btn btn-warning">Leave conscius (+2)</button></li>
+          <li class="dropdown-item"><button type="button" id="addFour" class="btn btn-warning">Knock out (+4)</button></li>
+          <li class="dropdown-item"><button type="button" id="addTen" class="btn btn-warning">Kill (+10)</button></li>
+        </ul>
+        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Use Energy</button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item"><button id="subOne" class="btn btn-warning">Graft Skip One turn (-1) </button></li>
+          <li class="dropdown-item"><button id="subTwo" class="btn btn-warning">Yearly Vampiric Dormancy Cost (-2)</button></li>
+          <li class="dropdown-item"><button id="subTen" class="btn btn-warning">Monthly Cost or Make a Ghoul (-10)</button></li>
+          <li class="dropdown-item"><button id="subTwenty" class="btn btn-warning">Flesh Bud (-20)</button></li>
+          <li class="dropdown-item"><button id="subHundred" class="btn btn-warning">Faster Ghoul Creation or Skip 1 year of Flesh Grafting form Ripple User (-100)</button></li>
+          <li class="dropdown-item"><button id="makeVamp" class="btn btn-warning">Make a Vampire (-250)</button></li>
+        </ul>
+      </div>
+    </div>
+    <hr id="lineB" />
+    <h2 id="Key" class="display-heading"><a id="3"></a>
+      Key Rule Changes</h2>
+
+    <div id="Rules" class="content">
+      <p>
+        - <b>Arcana Checks</b> will be used to help you determine unexplained phenomena.
+        A successful Arcana Check will reveal if an item has been infused with a special energy, or if it is just a trick that can be explained through conventional technology.
+        <u>As a Reaction</u>, when you are affected/damaged by an unknown phenomenon that you suspect is an ability,
+        you may make an Arcana Check in order to determine the function of the ability.
+      </p>
+      <p>
+        - <b>Initiative</b> is calculated by adding your <u>Dexterity AND Wisdom</u>
+        instead of just Dex. Stand stats can not be used to calculate initiative.
+      </p>
+      <p>
+        - <b>Talking</b> is a free action.
+      </p>
+      <p>
+        - <b>The Tile System</b> is meter-based. Each 'square' represents 1 meter.
+      </p>
+      <p>
+        - <b>Bonus Proficiencies</b> are granted based on a character's Intelligence Modifier.
+        You may pick that number of Skills (minimum of zero) and gain Proficiency in them.
+      </p>
+      <p>
+        - <b>Armor Class</b> (AC) is calculated as either 10 + Dex + Con, 10 + Dex + Wis,
+        or 10 + Wis + Con.
+        The same calculation applies to Stands, with their respective stats.
+      </p>
+      <p>
+        - <b>Medicine Checks</b> may be performed on a character with <u>0 Hit Points</u>.
+        If you succeed the Medicine Check (DC 10), they return to 1 Hit Point.
+      </p>
+      <p>
+        - <b>Inspiration</b> has no upper limit in terms of how much you can have at once, and it persists over a short or long rest.
+      </p>
+      <p>
+        - <b>Unarmed Strikes</b> deal 1d4 Bludgeoning Damage.
+        You may choose to add either your <u>Strength OR Dexterity</u> to the Attack Rolls, but only Strength may be added to the Damage Rolls.
+      </p>
+      <!--<iframe src="https://www.jojodnd.com/rules/" title="Rule change page" id="RuleWindow"></iframe>-->
+    </div>
+    <hr id="lineC" />
+    <h2 id="FeatTitle" class="display-heading"><a id="4"></a>
+      Rules of Feats
+    </h2>
+
+    <div class="content" id="FeatDiv">
+      <h4 class="display-heading center">
+        Feats/level
+      </h4>
+      <table class="col-3" id="head-table">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th># of Feats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-5</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>6-10</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>11-15</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>16-19</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>20+</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="center"><i><small>
+            *Feats as class features don't count against this limit of feats.
+          </small>
+        </i>
+      </p>
+      <p class="center"><i><small>
+            *Feats <u><b>cannot</b></u> be taken in lue of Ability Score improvements like regular 5e.
+          </small>
+        </i>
+      </p>
+    </div>
+    <hr id="lineH" />
+    <h2 id="trackerTitle" class="display-heading"><a id="5"></a>
+      Stand Energy Tracker
+    </h2>
+    <div class="content" id="SECalc">
+      <div class="btn-group">
+        <input id="currentSE" class="bg-warning" type="text" placeholder="Enter Stand Energy" value="10">
+        <button type="button" class="btn btn-warning" onclick="countUp()">+</button>
+        <button type="button" class="btn btn-warning" onclick="countDown()">-</button>
+      </div>
+      <ul>
+        <li>Custom Ability (1 SE)</li>
+        <li>Special Ability (2 SE)</li>
+        <li>Ultimate Ability (5 SE)</li>
+        <li>Requiem Ability (3 SE)</li>
+        <li>Heavenly Ability (50 SE or 10SE)</li>
+
+      </ul>
+    </div>
+    <hr id="lineD" />
+    <h2 id="diceTitle" class="display-heading"><a id="6"></a>
+      Attack Dice Reference
+    </h2>
+    <div id="diceBox" class="content">
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th colspan="3" class="center">Stand Attack Dice</th>
+          </tr>
+          <tr>
+            <th>Class</th>
+            <th>Base Dice</th>
+            <th>Upgraded</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>1d12</td>
+            <td>2d10</td>
+          </tr>
+          <tr>
+            <td>Ranged</td>
+            <td>1d6</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>Remote</td>
+            <td>1d10</td>
+            <td>2d8</td>
+          </tr>
+          <tr>
+            <td>Ability</td>
+            <td>1d4</td>
+            <td>1d6</td>
+          </tr>
+          <tr>
+            <td>Enhancement</td>
+            <td>1d10</td>
+            <td>2d8</td>
+          </tr>
+          <tr>
+            <td>Revenge</td>
+            <td>1d12</td>
+            <td>2d10</td>
+          </tr>
+          <tr>
+            <td>Independent</td>
+            <td>1d8</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>Hive</td>
+            <td>1d6/1d10</td>
+            <td>2d6/2d10</td>
+          </tr>
+          <tr>
+            <td>Act 1</td>
+            <td colspan="2">1d4</td>
+          </tr>
+          <tr>
+            <td>Act 2</td>
+            <td colspan="2">1d8</td>
+          </tr>
+          <tr>
+            <td>Act 3</td>
+            <td colspan="2">2d8</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th colspan="4">Spin &amp; Ripple Attack Dice</th>
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th>Hamon</th>
+            <th>Level</th>
+            <th>Spin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-4</td>
+            <td>2d6</td>
+            <td>1-4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>5-9</td>
+            <td>2d8</td>
+            <td>5-8</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>10-14</td>
+            <td>2d10</td>
+            <td>9-12</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>15-16</td>
+            <td rowspan="3">2d12</td>
+            <td>13-16</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>17-19</td>
+            <td>17-19</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>20</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr id="lineE" />
+    <h2 id="Notes" class="display-heading"><a id="7"></a>
+      Notes
+    </h2>
+    <div id="noteBox" class="content">
+      <h4 class="display-heading">
+        General Notes
+      </h4>
+      <input type=text placeholder="Important stuff" class="notepad bg-warning">
+      <h4 class="display-heading">
+        Ability Notes
+      </h4>
+      <input type=text placeholder="Use this box for notes on any complex Stand/Ripple/Spin abilities." class="notepad bg-warning">
+      <h4 class="display-heading">
+        Session Plan/Encounter Notes
+      </h4>
+      <input type=text placeholder="Use this box for notes on your plan for the session! You can use this for any simple notes you want available as well." class="notepad bg-warning">
+      <p>
+        <small><i><b>Note:</b> This is for temparary notes only.</i></small>
+      </p>
+    </div>
+    <hr id="lineF" />
+    <h2 id="random" class="display-heading"><a id="8"></a>
+      Random Tables
+    </h2>
+    <div id="randomBox" class="content">
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th>Dice</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1d10</td>
+            <td>Burned by coals, hit by a falling bookcase, pricked by a poison needle</td>
+          </tr>
+          <tr>
+            <td>2d10</td>
+            <td>Being struck by lightning, stumbling into a fire pit</td>
+          </tr>
+          <tr>
+            <td>4d10</td>
+            <td>Hit by falling rubble in a collapsing tunnel, stumbling into a vat of acid</td>
+          </tr>
+          <tr>
+            <td>10d10</td>
+            <td>Crushed by compacting walls, hit by whirling steel blades, wading through a lava stream</td>
+          </tr>
+          <tr>
+            <td>18d10</td>
+            <td>Being submerged in lava, being hit by a crashing flying fortress</td>
+          </tr>
+          <tr>
+            <td>24d10</td>
+            <td>Tumbling into a vortex of fire on the Elemental Plane of Fire, being crushed in the jaws of a godlike creature or moon-sized monster | Getting blown up</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th id="removeBorder"></th>
+            <th colspan="3">Dice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Level</td>
+            <td>Setback</td>
+            <td>Dangerous</td>
+            <td>Deadly</td>
+          </tr>
+          <tr>
+            <td>1st–4th</td>
+            <td>1d10</td>
+            <td>2d10</td>
+            <td>4d10</td>
+          </tr>
+          <tr>
+            <td>5th–10th</td>
+            <td>2d10</td>
+            <td>4d10</td>
+            <td>10d10</td>
+          </tr>
+          <tr>
+            <td>11th–16th</td>
+            <td>4d10</td>
+            <td>10d10</td>
+            <td>18d10</td>
+          </tr>
+          <tr>
+            <td>17th–20th</td>
+            <td>10d10</td>
+            <td>18d10</td>
+            <td>24d10</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 class='display-heading'>Detriments (Locacaca)</h4>
+      <table id='stone' class='tablez table-striped'>
+        <thead>
+          <tr>
+            <th class="d20">d20</th>
+            <th>Part Turned To Stone</th>
+            <th>Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Inner Heart Valve</td>
+            <td>1 Force damage at the start of each Turn (every 6 Seconds), this damage cannot be reduced or removed in any way.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Inner Brain</td>
+            <td>Gain 5 Levels of Exhaustion and fall into a coma.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stomach</td>
+            <td>Food (other than the Locacaca Fruit) may no longer be digested, and stomach acid will begin to leak into the body after 6 hours.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Small Intestinal Fragment</td>
+            <td>Results in half-digested food being pushed into the body, outside of the organs.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Anus</td>
+            <td>Improper solid waste disposal, which will eventually result in an intestinal rupture, likely within the next few days.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Left Arm</td>
+            <td>Past the elbow, the left arm becomes unusable.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Right Arm</td>
+            <td>Past the elbow, the right arm becomes unusable.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Both Feet</td>
+            <td>From the ankles down, the feet become totally unusable and walking speed is reduced by 5 meters.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Lung</td>
+            <td>Chest feels heavy, half lung capacity, easily winded and, cannot take the Dash Action.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Left Ear</td>
+            <td>Lose hearing in the left ear.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Right Ear</td>
+            <td>Lose hearing in the right ear.</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Jaw</td>
+            <td>Inability to speak properly or chew food normally.</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Left Eye</td>
+            <td>Lose sight in the left eye.</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Right Eye</td>
+            <td>Lose sight in the right eye.</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Appendix</td>
+            <td>Minor, continued discomfort in the abdomen.</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Left Kidney</td>
+            <td>The left kidney shuts down completely.</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Right Kidney</td>
+            <td>The right kidney shuts down completely.</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Teeth</td>
+            <td>Regular teeth fall out and are replaced with stone teeth in the same shape.</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Nose</td>
+            <td>Lose ability to breathe through the nose, as well as all sense of smell. This also alters the sense of taste.</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Reproductive Organs</td>
+            <td>Sterility</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 class="display-heading">
+        Random Stand Type Table
+      </h4>
+      <table class="tablez table-striped minor center">
+        <thead>
+          <tr>
+            <th id="rand-type">d100</th>
+            <th>Stand Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-35</td>
+            <td>Power</td>
+          </tr>
+          <tr>
+            <td>36-49</td>
+            <td>Ranged</td>
+          </tr>
+          <tr>
+            <td>50-69</td>
+            <td>Enhancement</td>
+          </tr>
+          <tr>
+            <td>70-79</td>
+            <td>Remote</td>
+          </tr>
+          <tr>
+            <td>80-89</td>
+            <td>Ability</td>
+          </tr>
+          <tr>
+            <td>90-93</td>
+            <td>Independent</td>
+          </tr>
+          <tr>
+            <td>94-97</td>
+            <td>Hive</td>
+          </tr>
+          <tr>
+            <td>98-99</td>
+            <td>Revenge</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Act</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr id="lineG" />
+    <h2 id="weaponTitle" class="display-heading"><a id="9"></a>
+      Weapon Reference
+    </h2>
+    <div id="weaponBox" class="content">
+      <h4 class="display-heading center">
+        Weapon Attributes
+      </h4>
+      <ul>
+        <li><strong>Ambush:</strong> Whenever you attack a target who is Surprised with this weapon, if you hit your target, you automatically deal a critical hit.</li>
+        <li><strong>Bulky:</strong> Before you use this weapon to attack, you must use your Bonus Action to Brace.</li>
+        <li><strong>Complex:</strong> Rather than taking one attack to reload, this weapon requires three attacks to reload.</li>
+        <li><strong>Concealed:</strong> Gives a bonus equal to the number provided by this attribute on all attempts made to conceal the weapon.</li>
+        <li><strong>Firearm:</strong> Creates a loud noise when fired, ammo does not function when wet, and when a nat 1 is rolled on attack rolls with a weapon with this attribute, the weapon becomes jammed, and an Action must be spent to make it function again.</li>
+        <li><strong>Flame:</strong> Whenever the target of the attack takes fire damage, if the target is flammable, they are set ablaze.</li>
+        <li><strong>Light:</strong> When you wield two weapons with the Light property at once, you may make an additional attack without penalty on your turn as a Bonus Action using either weapon.</li>
+        <li><strong>Point Blank:</strong> You may make ranged attacks in melee without penalty. Additionally, when you are within melee range of a prone target, you have advantage to hit them with attacks made with this weapon.</li>
+        <li><strong>Radius:</strong> The range in which you must make a Dexterity Saving Throw against an explosive.</li>
+        <li><strong>Ranged:</strong> This weapon can fire up to its short range (the top number), or as far as its long range (the bottom number) with Disadvantage. Firing within melee range imposes Disadvantage.</li>
+        <li><strong>Reliable:</strong> A firearm that does not jam when a nat 1 is rolled on an attack roll.</li>
+        <li><strong>Reload:</strong> How many times the weapon must be fired before an attack must be spent to reload.</li>
+        <li><strong>Remote:</strong> An explosive that may be detonated as a Bonus Action, up to 1 kilometer away.</li>
+        <li><strong>Return:</strong> A er making a Thrown Weapon attack with the weapon, you may use your Reaction to catch it, putting it back in your inventory.</li>
+        <li><strong>Siege:</strong> Deals double damage against objects.</li>
+        <li><strong>Timer:</strong> You may set an amount of time for an explosive device. A er the timer runs out, the explosive detonates. Can be set for up to 12 hours between priming and detonation.</li>
+        <li><strong>Thrown:</strong> This weapon can be thrown to its short range (the top number), or as far as its long range (the bottom number) with Disadvantage. Throwing within melee range imposes Disadvantage.</li>
+        <li><strong>Two-Handed:</strong> This weapon required two hands to attack with. May be carried using a singular hand.</li>
+      </ul>
+      <div id="weapFeats">
+        <p>Demolitionist</p>
+        <ul>
+          <li>Proficiency in Explosives &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Explosive Save DC +2</li>
+          <li>Advantage on anything explosive related</li>
+        </ul>
+        <p>Heavy Specialization</p>
+        <ul>
+          <li>Proficiency in Heavy Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>+2 to your AC until start of next turn when bracing with a heavy weapon</li>
+        </ul>
+        <p>Martial Arts</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Expertise in unarmed strikes and stand melee</li>
+          <li>1d8 unarmed strikes</li>
+          <li>When Grappling or Shoving, you can use Dex or Str</li>
+          <li>Full action Grapple, If you are successful, the target is restrained indefinitely until you use your action for something else or you move.</li>
+        </ul>
+        <p>Melee Specialization</p>
+        <ul>
+          <li>Proficiency in Melee Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>1/turn you may reroll damage dice for a melee weapon</li>
+          <li>While wielding yo can take the 5e Parry (Add PB to AC) reaction if hit</li>
+        </ul>
+        <p>Professional Weapon Training</p>
+        <ul>
+          <li>Proficiency in Simple and Martial Weapons &amp; Expertise in them if you already are proficient with them.</li>
+        </ul>
+        <p>Rifle Specialization</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>A 19 or 20 is a crit with Rifles</li>
+          <li>No disadvantage at long range with Rifle</li>
+        </ul>
+        <p>Shotgun Specialization</p>
+        <ul>
+          <li>Proficiency in Shotguns &amp; Expertise in them if you already are proficient with them.</li>
+          <li>When shooting medium or smaller creature at short range, you can choose to halve damage to force them to make a DC 8 + Con Mod +PB Con save, On a fail they are knocked prone</li>
+        </ul>
+        <p>Sidearm Specialization</p>
+        <ul>
+          <li>Proficiency in Sidearms &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Free action reload with Sidearms</li>
+        </ul>
+        <p>Simple Weapon Focus</p>
+        <ul>
+          <li>Proficiency in Simple Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Add PB to damage on Melee, or a second time to attack roll with ranged</li>
+        </ul>
+        <p>Tavern Brawler</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>When attacking on your turn, you may make an additional improvised weapon attack as a bonus action, or Grapple/Shove a target as a bonus action</li>
+        </ul>
+        <p>Thrown Weapon Specialization</p>
+        <ul>
+          <li>Proficiency in Thrown Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Draw a Thrown weapon as a free action</li>
+          <li>Throw 2 same thrown/improvised weapons as a single attack. This cannot be done with spin spheres</li>
+        </ul>
+      </div>
+    </div>
+    <hr id="lineI" />
+  </body>
+
+</html>
