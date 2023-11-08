@@ -222,13 +222,6 @@ div#weapFeats > p {
 }
 
 #navTitleWrapper {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  z-index: -1;
-}
-
-#navTitle {
   margin-top: 12px;
+  margin-bottom: 1rem;
 }
