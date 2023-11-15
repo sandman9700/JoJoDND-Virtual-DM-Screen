@@ -26,7 +26,8 @@
 #diceBox,
 #noteBox,
 #randomBox,
-#weaponBox {
+#weaponBox,
+.featTable {
   display: none;
 }
 
