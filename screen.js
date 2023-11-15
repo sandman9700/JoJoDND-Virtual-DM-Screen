@@ -1,5 +1,5 @@
 $("#Stats").click(function() {
-  $(".TopLine, #PowStats, #RngStats, #RemStats, #AblStats, #EnhStats, #RevStats, #IndStats, #HiveStats, #ActStats, #statbox").toggle();
+  $(".TopLine, #PowStats, #RngStats, #RemStats, #AblStats, #EnhStats, #RevStats, #IndStats, #HiveStats, #ActStats, #statbox, #featStats").toggle();
 });
 
 $("#Vamp").click(function() {
@@ -69,6 +69,10 @@ $("#HiveStats").click(function() {
 
 $("#ActStats").click(function() {
   $(".ActTable").toggle();
+});
+
+$("#featStats").click(function() {
+  $(".featTable").toggle();
 });
 
 $("#FeatTitle").click(function() {
