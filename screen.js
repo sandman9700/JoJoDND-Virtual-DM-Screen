@@ -7,8 +7,8 @@ $("#random").click(function () {
   $("#randomBox").toggle();
 });
 
-$("#track").click(function () {
-  $("#initiative").toggle();
+$("#theTrack").click(function () {
+  $("#ultTrack").toggle();
 });
 
 $("#weaponTitle").click(function () {
@@ -79,48 +79,48 @@ $("#FeatTitle").click(function () {
 
 //Toggles
 $("#statConv").click(function () {
-  $("#Stats").toggle();
+  $("#StatsCont").toggle();
   $("#lineA").toggle();
   $("#statConv").toggleClass("off");
 });
 
 
 $("#ruleToggle").click(function () {
-  $("#Key").toggle();
-  $("#lineC").toggle();
+  $("#KeyCont").toggle();
+  $("#lineB").toggle();
   $("#ruleToggle").toggleClass("off");
 });
 
 
 $("#diceToggle").click(function () {
-  $("#diceTitle").toggle();
+  $("#diceCont").toggle();
   $("#lineE").toggle();
   $("#diceToggle").toggleClass("off");
 });
 
 $("#noteToggle").click(function () {
-  $("#Notes").toggle();
+  $("#NotesCont").toggle();
   $("#lineF").toggle();
   $("#noteToggle").toggleClass("off");
 });
 
 $("#randToggle").click(function () {
-  $("#random").toggle();
+  $("#randomCont").toggle();
   $("#lineG").toggle();
   $("#randToggle").toggleClass("off");
 });
 
 $("#weaponRef").click(function () {
-  $("#weaponTitle").toggle();
+  $("#weaponCont").toggle();
   $("#lineI").toggle();
   $("#weaponRef").toggleClass("off");
 });
 
-$("#initiativeTrack").click(function () {
-  $("#track").toggle();
+$("#ultimate").click(function () {
+  $("#theTrack").toggle();
   $("#linej").toggle();
-  $("#initiativeTrack").toggleClass("off");
+  $("#ultimate").toggleClass("off");
 });
 
 
-//Tracker
+//myTracker

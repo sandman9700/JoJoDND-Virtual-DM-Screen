@@ -77,12 +77,12 @@
       <p id="noteToggle">- Notes</p>
       <p id="randToggle">- Random Tables</p>
       <p id="weaponRef">- Weapon Reference</p>
-      <!--<p id="initiativeTrack">- Initiative Tracker</p>-->
+      <p id="ultimate">- Ultimate Tracker</p>
     </div>
   </div>
   <hr />
-  <div id="Stats">
-  <h2 class="display-heading"><a id="1"></a>
+  <div id="StatsCont">
+  <h2  id="Stats" class="display-heading"><a id="1"></a>
     Stand Stat Conversions
   </h2>
 
@@ -674,56 +674,102 @@
   </div>
 </div>
   <hr id="lineA" />
-  <div id="Key">
-  <h2 class="display-heading"><a id="3"></a>
+  <div id="KeyCont">
+  <h2 id="Key" class="display-heading"><a id="3"></a>
     Key Rule Changes</h2>
 
   <div id="Rules" class="content">
     <p>
-      - <b>Arcana Checks</b> will be used to help you determine unexplained phenomena.
-      A successful Arcana Check will reveal if an item has been infused with a special energy, or if it is just a trick
-      that can be explained through conventional technology.
-      <u>As a Reaction</u>, when you are affected/damaged by an unknown phenomenon that you suspect is an ability,
-      you may make an Arcana Check in order to determine the function of the ability.
-    </p>
-    <p>
+      - <b>Humans</b> do not get any special racial features or bonuses. Check the <a href="https://www.jojodnd.com/races/?focus=Human">Races page</a> for more information.
+  </p>
+  <p>
+      - <b>Arcana Checks</b> will be used to help you determine unexplained phenomena. 
+      A successful Arcana Check will reveal if an item has been infused with a special energy, or if it is just a trick that can be explained through conventional technology.
+      For example, if you were to see a floating toaster, a successful Arcana Check could reveal that it is floating because there are probably magnets inside,
+      or it might clue you that something else is going on.
+      <u>As a Reaction</u>, when you are affected/damaged by an unknown phenomenon that you suspect is an Ability,
+      you may make an Arcana Check in order to determine the function of the Ability.  
+  </p>
+  <p>
       - <b>Initiative</b> is calculated by adding your <u>Dexterity AND Wisdom</u>
       instead of just Dex. Stand stats can not be used to calculate initiative.
-    </p>
-    <p>
-      - <b>Talking</b> is a free action.
-    </p>
-    <p>
-      - <b>The Tile System</b> is meter-based. Each 'square' represents 1 meter.
-    </p>
-    <p>
+  </p>
+  <p>
+      - <b>Talking</b> is a free action. This module is based on JoJo's Bizarre Adventure after all,
+      and it wouldn't be JoJo's without a side character commenting on everything happening, as it happens, even if the talking takes more than 6 seconds.
+  </p>
+  <p>
+      - <b>The Tile System</b> is meter-based. Each 'square' represents 1 meter (3 feet).
+  </p>
+  <p>
+      - <b>The Maximum Level</b> in this module is not necessarily twenty. There are certain characters and enemies that may be more powerful than the normal
+      5e Level cap, but allowing this is up to the DM's discretion.
+  </p>
+  <p>
+      - <b>Bonus Feats</b> are granted to make characters more powerful and interesting. You may select an amount of additional <a href="/feats">Feats</a> equal to your Proficiency Bonus.
+  </p>
+  <p>
       - <b>Bonus Proficiencies</b> are granted based on a character's Intelligence Modifier.
       You may pick that number of Skills (minimum of zero) and gain Proficiency in them.
-    </p>
-    <p>
+      You may also swap some or all of these Bonus Proficiencies for Human Languages, Instruments, or Tool Proficiencies.
+      These Proficiencies do not count against any Proficiencies gained by any
+      <a href="https://www.jojodnd.com/feats">Feats</a> or from your <a href="https://www.jojodnd.com/passions">Passion</a>.
+  </p>
+  <p>
       - <b>Armor Class</b> (AC) is calculated as either 10 + Dex + Con, 10 + Dex + Wis,
-      or 10 + Wis + Con.
-      The same calculation applies to Stands, with their respective stats.
-    </p>
-    <p>
+      or 10 + Wis + Con. You may still use armor from 5e if you wish, but this 'Unarmored Defense' <u>will not stack with it</u>.
+      The same calculation applies to <a href="https://www.jojodnd.com/classes?focus=Stands">Stands</a>, with their respective stats.
+  </p>
+  <p>
       - <b>Medicine Checks</b> may be performed on a character with <u>0 Hit Points</u>.
-      If you succeed the Medicine Check (DC 10), they return to 1 Hit Point.
-    </p>
-    <p>
-      - <b>Inspiration</b> has no upper limit in terms of how much you can have at once, and it persists over a short or
-      long rest.
-    </p>
-    <p>
+      If you succeed the Medicine Check (DC 10), they are not just stabilized, but also return to 1 Hit Point.
+  </p>
+  <p>
+      - <b>Inspiration</b> has no upper limit in terms of how much you can have and can be given to another character over the course of a Short or Long Rest.
+  </p>
+  <p>
       - <b>Unarmed Strikes</b> deal 1d4 Bludgeoning Damage.
-      You may choose to add either your <u>Strength OR Dexterity</u> to the Attack Rolls, but only Strength may be added
-      to the Damage Rolls.
-    </p>
+      You may choose to add either your <u>Strength OR Dexterity</u> to the Attack Rolls, but only Strength may be added to the Damage Rolls.
+  </p>
+  <p>
+      - <b>Light Weapons</b> may be dual-wielded alongside another Light weapon or an empty hand.
+      For this purpose Unarmed Strikes are considered to have the Light property.
+  </p>
+  <p>
+      - <b>Speed Duels</b> may be performed when you wish to take an action before your target can react (stealing, disarming, quick draw, etc.).
+      To do so, you must use a single Attack and both creatures must roll an Athletics (Wisdom) Check, or an Athletics (Speed) Check if using a Stand.
+      If the attacker rolls higher, they successfully carry out the desired action. Otherwise, nothing happens.
+  </p>
+  <p>
+      - <b>Multiclassing</b> is allowed. For example a Stand User with a Power Type Stand might also choose to use The Ripple.
+      However, each character can only have one Stand. Typically this means each character can only have one Stand Type, but Multi-Type Stands are allowed. 
+      The rules for this are detailed on the <a href="https://www.jojodnd.com/classes">Classes</a> page.
+  </p>
+</section>
+<section>
+  <h3>Tools</h3>
+  <p>These items may be acquired and gained Proficiency in through various means. Using them may allow you to make various Skill Checks that you otherwise might not be able to perform.</p>
+  <p>The list of tools and their various use cases is as follows:</p>
+  <ul>
+      <li><b>Artist's Tools</b> are used to create or analyze various forms of artistry, and may specifically be one of the following: A Filmmaker's Camera, Glassmaker's Tools, Jeweler's Tools, Painter's Supplies, Potter's Tools, Sculptor's Tools, Weaver's Tools, Woodcrafter's Tools, Writer's Tools.</li>
+      <li><b>Blacksmith's Tools</b> may be used to maintain metallic weapons or create a basic tool or trinket from metal.</li>
+      <li><b>Chemist's Tools</b> may be used to create basic chemical compounds, identify a chemical, store a small amount of a strange substance, or create chemical reactions.</li>
+      <li><b>Cook's Utensils</b> may be used to create a variety of meals, dice something finely, identify ingredients in a dish, or experiment to find a new dish.</li>
+      <li><b>Diviner's Tools</b> may be used to predict the future, often in ways that don't make sense without context until the moment of truth.</li>
+      <li><b>Engineer's Tools</b> may be used to move something heavy, measure a precise amount of distance, or to repair certain structures or machines that have been damaged.</li>
+      <li><b>Fletcher's Tools</b> may be used to create and maintain weapons and ammunition made out of wood and natural materials, including bows, crossbows, atlatls, spears, clubs, and darts.</li>
+      <li><b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create gunpowder, or create ammunition for such weapons.</li>
+      <li><b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify plants and their potential medicinal purposes.</li>
+      <li><b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely.</li>
+  </ul>
+</section>
+<section>
     <!--<iframe src="https://www.jojodnd.com/rules/" title="Rule change page" id="RuleWindow"></iframe>-->
   </div>
 </div>
   <hr id="lineD" />
-  <div id="diceTitle">
-  <h2 class="display-heading"><a id="6"></a>
+  <div id="diceCont">
+  <h2 id="diceTitle" class="display-heading"><a id="6"></a>
     Attack Dice Reference
   </h2>
   <div id="diceBox" class="content">
@@ -845,8 +891,8 @@
   </div>
 </div>
   <hr id="lineE" />
-  <div id="Notes">
-  <h2 class="display-heading"><a id="7"></a>
+  <div id="NotesCont">
+  <h2 id="Notes" class="display-heading"><a id="7"></a>
     Notes
   </h2>
   <div id="noteBox" class="content">
@@ -871,8 +917,8 @@
   </div>
 </div>
   <hr id="lineF" />
-  <div id="random">
-  <h2 class="display-heading"><a id="8"></a>
+  <div id="randomCont">
+  <h2 id="random" class="display-heading"><a id="8"></a>
     Random Tables
   </h2>
   <div id="randomBox" class="content">
@@ -1120,8 +1166,8 @@
   </div>
 </div>
   <hr id="lineG" />
-  <div id="weaponTitle">
-  <h2 class="display-heading"><a id="9"></a>
+  <div id="weaponCont">
+  <h2 id="weaponTitle" class="display-heading"><a id="9"></a>
     Weapon Reference
   </h2>
   <div id="weaponBox" class="content">
@@ -1280,13 +1326,13 @@
   </div>
 </div>
   <hr id="lineI" />
-  <!--<div id="track">
-    <h2 class="display-heading">Initiative Tracker</h2>
-<div id="initiative" class="content">
-
+  <div id="myTrack">
+    <h2 id="theTrack" class="display-heading">Ultimate Tracker</h2>
+<div id="ultTrack" class="content">
+ <Iframe src="https://www.jojodnd.com/resources/community/Assets/Tracker/tracker.html"></Iframe>
 </div>
 <div style="padding: 20px;"></div>
-  </div>-->
+  </div>
   
 </body>
 
