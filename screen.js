@@ -123,4 +123,17 @@ $("#ultimate").click(function () {
 });
 
 
-//myTracker
+// NoteBox
+var generalVal = $("#general").val();
+var abilityVal = $("#ability").val();
+var planVal = $("#plan").val();
+
+// Set Items in localStorage
+localStorage.setItem("general", generalVal);
+localStorage.setItem("ability", abilityVal);
+localStorage.setItem("plan", planVal);
+
+// Retrieve and set items in HTML elements
+$("#general").html(localStorage.getItem("general");
+$("#ability").html(localStorage.getItem("ability");
+$("#plan").html(localStorage.getItem("plan");
