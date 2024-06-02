@@ -123,17 +123,25 @@ $("#ultimate").click(function () {
 });
 
 
-// NoteBox
-var generalVal = $("#general").val();
-var abilityVal = $("#ability").val();
-var planVal = $("#plan").val();
+if(localStorage.getItem("general")) {
+  $("#general").val(localStorage.getItem("general"));
+}
+if(localStorage.getItem("ability")) {
+  $("#ability").val(localStorage.getItem("ability"));
+}
+if(localStorage.getItem("plan")) {
+  $("#plan").val(localStorage.getItem("plan"));
+}
 
-// Set Items in localStorage
-localStorage.setItem("general", generalVal);
-localStorage.setItem("ability", abilityVal);
-localStorage.setItem("plan", planVal);
+// Save items to localStorage on textarea change
+$("#general").on('textarea', function() {
+  localStorage.setItem("general", $(this).val());
+});
 
-// Retrieve and set items in HTML elements
-$("#general").html(localStorage.getItem("general");
-$("#ability").html(localStorage.getItem("ability");
-$("#plan").html(localStorage.getItem("plan");
+$("#ability").on('textarea', function() {
+  localStorage.setItem("ability", $(this).val());
+});
+
+$("#plan").on('textarea', function() {
+  localStorage.setItem("plan", $(this).val());
+});
