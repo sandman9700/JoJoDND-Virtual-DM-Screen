@@ -1,3 +1,5 @@
+ var newContent = ""
+
 $("#Stats").click(function () {
   $(".TopLine, #PowStats, #RngStats, #RemStats, #AblStats, #EnhStats, #RevStats, #IndStats, #HiveStats, #ActStats, #statbox, #featStats").toggle();
 });
@@ -9,6 +11,10 @@ $("#random").click(function () {
 
 $("#theTrack").click(function () {
   $("#ultTrack").toggle();
+});
+
+$("#economy").click(function () {
+  $("#actioN").toggle();
 });
 
 $("#weaponTitle").click(function () {
@@ -122,26 +128,36 @@ $("#ultimate").click(function () {
   $("#ultimate").toggleClass("off");
 });
 
+$("#actionEconomy").click(function () {
+  $("#economy").toggle();
+  $("#lineK").toggle();
+  $("#actionEconomy").toggleClass("off");
+});
 
-if(localStorage.getItem("general")) {
+if (localStorage.getItem("general")) {
   $("#general").val(localStorage.getItem("general"));
 }
-if(localStorage.getItem("ability")) {
+if (localStorage.getItem("ability")) {
   $("#ability").val(localStorage.getItem("ability"));
 }
-if(localStorage.getItem("plan")) {
+if (localStorage.getItem("plan")) {
   $("#plan").val(localStorage.getItem("plan"));
 }
 
 // Save items to localStorage on textarea change
-$("#general").on('textarea', function() {
+$("#general").on('textarea', function () {
   localStorage.setItem("general", $(this).val());
 });
 
-$("#ability").on('textarea', function() {
+$("#ability").on('textarea', function () {
   localStorage.setItem("ability", $(this).val());
 });
 
-$("#plan").on('textarea', function() {
+$("#plan").on('textarea', function () {
   localStorage.setItem("plan", $(this).val());
 });
+
+function getData() {
+  $.getJSON("actionEconomy.json", function(data) {
+      cData = data;
+  })}
