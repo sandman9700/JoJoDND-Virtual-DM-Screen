@@ -33,7 +33,8 @@ body {
 #weaponBox,
 .featTable,
 #featStats,
-#ultTrack{
+#ultTrack,
+#actioN{
   display: none;
 }
 
