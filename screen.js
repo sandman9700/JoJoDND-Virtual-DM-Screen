@@ -149,17 +149,14 @@ if (localStorage.getItem("plan")) {
 }
 
 // Save items to localStorage on textarea change
-$("#general").on('textarea', function () {
+$("#general").on("change", "textarea", function() {
   localStorage.setItem("general", $(this).val());
 });
 
-$("#ability").on('textarea', function () {
+$("#ability").on("change", "textarea", function(){
   localStorage.setItem("ability", $(this).val());
 });
 
-$("#plan").on('textarea', function () {
+$("#plan").on("change", "textarea", function() {
   localStorage.setItem("plan", $(this).val());
 });
-
-
-

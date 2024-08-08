@@ -56,7 +56,9 @@
         "Weapon Attribute Specialist (Complex, Two Attacks)",
         "Weapon Attribute Specialist (Conductive)",
         "Whirlwind Attacker (Two Attacks or Action)",
-        "Zombification (Feat of Strength)"
+        "Zombification (Feat of Strength)",
+        "<textarea id='Action1' type=text placeholder='More' class='notepad bg-warning'></textarea>",
+        "<textarea id='Action2' type=text placeholder='More' class='notepad bg-warning'></textarea>"
     ],
     "Bonus_Actions": [
         "Act Switching",
@@ -111,7 +113,9 @@
         "Veteran Sprinter (Dash)",
         "Warrior Fighting Style (Dual Wielding)",
         "Warrior Fighting Style (Mobile)",
-        "Weapon Attribute Specialist (Reload)"
+        "Weapon Attribute Specialist (Reload)",
+        "<textarea id='Bonus1' type=text placeholder='More' class='notepad bg-warning'></textarea>",
+        "<textarea id='Bonus2' type=text placeholder='More' class='notepad bg-warning'></textarea>"
     ],
     "Reactions": [
         "Artisan Fighting Style (Foresight)",
@@ -153,7 +157,9 @@
         "Tactician (Ally’s Strike/Reposition)",
         "Toxin Expulsion",
         "Uncanny Reflexes",
-        "Weapon Attribute Specialist (Ranged)"
+        "Weapon Attribute Specialist (Ranged)",
+        "<textarea id='Reaction1' type=text placeholder='More' class='notepad bg-warning'></textarea>",
+        "<textarea id='Reaction2' type=text placeholder='More' class='notepad bg-warning'></textarea>"
     ],
     "Attacks": [
         "Body Evacuation",
@@ -214,7 +220,9 @@
         "Weaponsmith (Fletcher Abilities)",
         "Weaponsmith (Gunsmith Abilities)",
         "Whirlwind Attacker (Two Attacks or Action)",
-        "Zoom Punch"
+        "Zoom Punch",
+        "<textarea id='Attack1' type=text placeholder='More' class='notepad bg-warning'></textarea>",
+        "<textarea id='Attack2' type=text placeholder='More' class='notepad bg-warning'></textarea>"
     ],
     "Free_Actions": [
         "Berserker",
@@ -234,6 +242,8 @@
         "Thrown Weapon Specialization (Draw weapon)",
         "Weapon Attribute Specialist (Return)",
         "Whirlwind Attacker",
-        "Wrist Memory"
+        "Wrist Memory",
+        "<textarea id='Free1' type=text placeholder='More' class='notepad bg-warning'></textarea>",
+        "<textarea id='Free2' type=text placeholder='More' class='notepad bg-warning'></textarea>"
     ]
 }
