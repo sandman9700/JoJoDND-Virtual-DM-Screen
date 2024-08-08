@@ -253,7 +253,7 @@ a:hover {
 
 
 table#box, table#box > * > * > * {
-  border: 3px solid black;
+  border: 3px solid #800080;
   z-index: 3;
 }
 
