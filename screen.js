@@ -1,6 +1,9 @@
- var newContent = ""
+$(document).ready(function() {
+  getData();
+  createTable();
+});
 
-$("#Stats").click(function () {
+ $("#Stats").click(function () {
   $(".TopLine, #PowStats, #RngStats, #RemStats, #AblStats, #EnhStats, #RevStats, #IndStats, #HiveStats, #ActStats, #statbox, #featStats").toggle();
 });
 
@@ -132,6 +135,7 @@ $("#actionEconomy").click(function () {
   $("#economy").toggle();
   $("#lineK").toggle();
   $("#actionEconomy").toggleClass("off");
+  createTable();
 });
 
 if (localStorage.getItem("general")) {
@@ -157,7 +161,5 @@ $("#plan").on('textarea', function () {
   localStorage.setItem("plan", $(this).val());
 });
 
-function getData() {
-  $.getJSON("actionEconomy.json", function(data) {
-      cData = data;
-  })}
+
+

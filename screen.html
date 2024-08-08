@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="screen.css">
   <script async src="screen.js"></script>
-
+  <script async src="table.js"></script>
   <title>JoJoDnD Virtual DM Screen</title>
 </head>
 <!--Thanks to Kyler and Maggy for your feedback and for making the website and the module respectfully.-->
@@ -83,1447 +83,1608 @@
   </div>
   <hr />
   <div id="StatsCont">
-  <h2  id="Stats" class="display-heading"><a id="1"></a>
-    Stand Stat Conversions
-  </h2>
+    <h2 id="Stats" class="display-heading"><a id="1"></a>
+      Stand Stat Conversions
+    </h2>
 
-  <div id="statbox" class="content">
-    <p><i><small>
-          Stand stat modifiers equal the stat divided by 10, rounded down
-        </small>
-      </i>
-    </p>
-    <hr />
-    <h4 id="PowStats" class="display-heading center">
-      Power Type Stand Stats
-    </h4>
-    <table id="PowTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x4</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x3</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x1</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x4</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x2</td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="statbox" class="content">
+      <p><i><small>
+            Stand stat modifiers equal the stat divided by 10, rounded down
+          </small>
+        </i>
+      </p>
+      <hr />
+      <h4 id="PowStats" class="display-heading center">
+        Power Type Stand Stats
+      </h4>
+      <table id="PowTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x4</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h4 id="RngStats" class="display-heading center">
-      Ranged Type Stand Stats
-    </h4>
-    <table id="RngTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x3</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x3</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x10</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
+      <h4 id="RngStats" class="display-heading center">
+        Ranged Type Stand Stats
+      </h4>
+      <table id="RngTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x10</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="RemStats" class="display-heading center">
-      Remote Type Stand Stats
-    </h4>
-    <table id="RemTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x3</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x2</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x4</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x5</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x2</td>
-        </tr>
+      <h4 id="RemStats" class="display-heading center">
+        Remote Type Stand Stats
+      </h4>
+      <table id="RemTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="AblStats" class="display-heading center">
-      Ability Type Stand Stats
-    </h4>
-    <table id="AblTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x1</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x1</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x4</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x5</td>
-        </tr>
+      <h4 id="AblStats" class="display-heading center">
+        Ability Type Stand Stats
+      </h4>
+      <table id="AblTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x1</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x1</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x4</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x5</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="EnhStats" class="display-heading center">
-      Enchancement Type Stand Stats
-    </h4>
-    <table id="EnhTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x3</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x5</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x5</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
+      <h4 id="EnhStats" class="display-heading center">
+        Enchancement Type Stand Stats
+      </h4>
+      <table id="EnhTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x5</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="RevStats" class="display-heading center">
-      Revenge Type Stand Stats
-    </h4>
-    <table id="RevTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x4</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x4</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x5</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
-      </tbody>
-    </table>
+      <h4 id="RevStats" class="display-heading center">
+        Revenge Type Stand Stats
+      </h4>
+      <table id="RevTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h4 id="IndStats" class="display-heading center">
-      Independent Type Stand Stats
-    </h4>
-    <table id="IndTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x3</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x4</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x0</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
+      <h4 id="IndStats" class="display-heading center">
+        Independent Type Stand Stats
+      </h4>
+      <table id="IndTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x0</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="HiveStats" class="display-heading center">
-      Hive Type Stand Stats
-    </h4>
-    <table id="HiveTable" class='tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x3</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x2</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x3</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x8</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
+      <h4 id="HiveStats" class="display-heading center">
+        Hive Type Stand Stats
+      </h4>
+      <table id="HiveTable" class='tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x3</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x8</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
 
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <h4 id="ActStats" class="display-heading center">
-      Act Type Stand Stats
-    </h4>
-    <h6 class="ActTable display-heading center">
-      Act 0 Stand Stats
-    </h6>
+      <h4 id="ActStats" class="display-heading center">
+        Act Type Stand Stats
+      </h4>
+      <h6 class="ActTable display-heading center">
+        Act 0 Stand Stats
+      </h6>
 
-    <table class='ActTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x0</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x0</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x0</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x1</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x0</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x0</td>
-        </tr>
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x0</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x0</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x0</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x0</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x0</td>
+          </tr>
 
-      </tbody>
-    </table>
-    <h6 class="ActTable display-heading center">
-      Act 1 Stand Stats
-    </h6>
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 1 Stand Stats
+      </h6>
 
-    <table class='ActTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x2</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x3</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x8</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x3</td>
-        </tr>
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x8</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x3</td>
+          </tr>
 
-      </tbody>
-    </table>
-    <h6 class="ActTable display-heading center">
-      Act 2 Stand Stats
-    </h6>
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 2 Stand Stats
+      </h6>
 
-    <table class='ActTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x2</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x3</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x3</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x3</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x5</td>
-        </tr>
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x3</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x3</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x3</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x5</td>
+          </tr>
 
-      </tbody>
-    </table>
-    <h6 class="ActTable display-heading center">
-      Act 3 Stand Stats
-    </h6>
+        </tbody>
+      </table>
+      <h6 class="ActTable display-heading center">
+        Act 3 Stand Stats
+      </h6>
 
-    <table class='ActTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Str x4</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Dex x3</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Con x4</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x1</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Wis x4</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Cha x2</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class='ActTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Str x4</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Dex x3</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Con x4</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x1</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Wis x4</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Cha x2</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h4 class="display-heading center" id="featStats">Stand Feat Stats
-    </h4>
-    <h6 class="display-heading center featTable">
-      Suit Stand
-    </h6>
-    <table class='featTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier Bonus</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Mod +2</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Mod +2</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Mod +2</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Int x0</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Unchanged</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Unchanged</td>
-        </tr>
-      </tbody>
-    </table>
+      <h4 class="display-heading center" id="featStats">Stand Feat Stats
+      </h4>
+      <h6 class="display-heading center featTable">
+        Suit Stand
+      </h6>
+      <table class='featTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Mod +2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Mod +2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Mod +2</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Int x0</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Unchanged</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h6 class="display-heading center featTable">
-      Shared Stand
-    </h6>
-    <table class='featTable tablez table-sm table-striped minor'>
-      <thead>
-        <tr>
-          <th>Stat</th>
-          <th>Multiplier Bonus</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>Mod -2</td>
-        </tr>
-        <tr>
-          <td>Precision</td>
-          <td>Mod -2</td>
-        </tr>
-        <tr>
-          <td>Durability</td>
-          <td>Mod -2</td>
-        </tr>
-        <tr>
-          <td>Range</td>
-          <td>Unchanged</td>
-        </tr>
-        <tr>
-          <td>Speed</td>
-          <td>Unchanged</td>
-        </tr>
-        <tr>
-          <td>Stand Energy</td>
-          <td>Unchanged</td>
-        </tr>
-      </tbody>
-    </table>
+      <h6 class="display-heading center featTable">
+        Shared Stand
+      </h6>
+      <table class='featTable tablez table-sm table-striped minor'>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Multiplier Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>Mod -2</td>
+          </tr>
+          <tr>
+            <td>Precision</td>
+            <td>Mod -2</td>
+          </tr>
+          <tr>
+            <td>Durability</td>
+            <td>Mod -2</td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Stand Energy</td>
+            <td>Unchanged</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h6 class="display-heading center featTable">
-      Sentient Stand
-    </h6>
-    <p class="center featTable">
-      Sentient Stand does not change Stand stats, but gives your stand Mental Stats (Intelligence, Wisdom, and
-      Charisma). These stats come from your Mental stats, but they can be switched around. Your stand may also have
-      different profiencies than you.
-    </p>
+      <h6 class="display-heading center featTable">
+        Sentient Stand
+      </h6>
+      <p class="center featTable">
+        Sentient Stand does not change Stand stats, but gives your stand Mental Stats (Intelligence, Wisdom, and
+        Charisma). These stats come from your Mental stats, but they can be switched around. Your stand may also have
+        different profiencies than you.
+      </p>
 
 
-    <h4 id="QuirkyText" class="display-heading center">
-      Stand Stat Quirks?
-      <!--I need a better name-->
-    </h4>
+      <h4 id="QuirkyText" class="display-heading center">
+        Stand Stat Quirks?
+        <!--I need a better name-->
+      </h4>
 
-    <div id="QuirkyBox" class="content">
-      <ul>
-        <li>Stand Movement Speed in Meters = 2x Speed Mod</li>
+      <div id="QuirkyBox" class="content">
         <ul>
-          <li>Every 50 Speed your stand has you gain an extra attack</li>
+          <li>Stand Movement Speed in Meters = 2x Speed Mod</li>
+          <ul>
+            <li>Every 50 Speed your stand has you gain an extra attack</li>
+          </ul>
+          <li>Range in Meters = Range Modifer (Mininmum of 1 meter)</li>
+          <li>Stand Energy = SE Mod</li>
+          <ul>
+            <li>Stand Energy is only tracked in combat.</li>
+            <li>When outside of combat, your stand energy is infinite, but as soon as you enter combat it's inite again
+            </li>
+          </ul>
         </ul>
-        <li>Range in Meters = Range Modifer (Mininmum of 1 meter)</li>
-        <li>Stand Energy = SE Mod</li>
-        <ul>
-          <li>Stand Energy is only tracked in combat.</li>
-          <li>When outside of combat, your stand energy is infinite, but as soon as you enter combat it's inite again
-          </li>
-        </ul>
-      </ul>
+      </div>
+      <hr />
     </div>
-    <hr />
   </div>
-</div>
   <hr id="lineA" />
   <div id="KeyCont">
-  <h2 id="Key" class="display-heading"><a id="3"></a>
-    Key Rule Changes</h2>
+    <h2 id="Key" class="display-heading"><a id="3"></a>
+      Key Rule Changes</h2>
 
-  <div id="Rules" class="content">
-    <p>
-      - <b>Humans</b> do not get any special racial features or bonuses. Check the <a href="/races?focus=Human">Races page</a> for more information.
-  </p>
-  <p>
-      - <b>Supernatural Checks</b> will be used to help you determine unexplained phenomena. 
-      A successful Supernatural Check will reveal if an item has been infused with a special energy, or if it is just a trick that can be explained through conventional technology.
-      For example, if you were to see a floating toaster, a successful Supernatural Check could reveal that it is floating because there are probably magnets inside,
-      or it might clue you that something else is going on.
-      <u>As a Reaction</u>, when you are affected/damaged by an unknown phenomenon that you suspect is an Ability,
-      you may make an Supernatural Check in order to determine the function of the Ability.  
-  </p>
-  <p>
-      - <b>Initiative</b> is calculated by adding your <u>Dexterity AND Wisdom</u>
-      instead of just Dex. Stand stats can not be used to calculate initiative.
-  </p>
-  <p>
-      - <b>Talking</b> is a free action. This module is based on JoJo's Bizarre Adventure after all,
-      and it wouldn't be JoJo's without a side character commenting on everything happening, as it happens, even if the talking takes more than 6 seconds.
-  </p>
-  <p>
-      - <b>The Tile System</b> is meter-based. Each 'square' represents 1 meter (3 feet).
-  </p>
-  <p>
-      - <b>The Maximum Level</b> in this module is not necessarily twenty. There are certain characters and enemies that may be more powerful than the normal
-      5e Level cap, but allowing this is up to the DM's discretion.
-  </p>
-  <p>
-      - <b>Bonus Feats</b> are granted to make characters more powerful and interesting. You may select an amount of additional <a href="/feats">Feats</a> equal to your Proficiency Bonus.
-  </p>
-  <p>
-      - <b>Bonus Proficiencies</b> are granted based on a character's Intelligence Modifier.
-      You may pick that number of Skills (minimum of zero) and gain Proficiency in them.
-      You may also swap some or all of these Bonus Proficiencies for Human Languages, Instruments, or Tool Proficiencies.
-      These Proficiencies do not count against any Proficiencies gained by any
-      <a href="/feats">Feats</a> or from your <a href="/passions">Passion</a>.
-  </p>
-  <p>
-      - <b>Armor Class</b> (AC) is calculated as either 10 + Dex + Con, 10 + Dex + Wis,
-      or 10 + Wis + Con. You may still use armor from 5e if you wish, but this 'Unarmored Defense' <u>will not stack with it</u>.
-      The same calculation applies to <a href="/classes?focus=Stands">Stands</a>, with their respective stats.
-  </p>
-  <p>
-      - <b>Medicine Checks</b> may be performed on a character with <u>0 Hit Points</u>.
-      If you succeed the Medicine Check (DC 10), they are not just stabilized, but also return to 1 Hit Point.
-  </p>
-  <p>
-      - <b>Advantage</b> allows you to roll 2 d20s and take the higher result. Disadvantage works the same, but you must take the lower result.
-      If you get two stacks of Advantage, you still only roll 2d20, but get a +2 bonus to the total result for each additional stack of Advantage.
-      The same goes with Disadvantage, but with a -2 penalty for each stack of Disadvantage. Stacks of Advantage and Disadvantage cancel each other out,
-      so if you'd have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage.
-  </p>
-  <p>
-      - <b>Inspiration</b> can be used to reroll something entirely, rather than just granting Advantage. It also has no upper limit in terms of how much you can have and can be given to another character over the course of a Short or Long Rest.
-  </p>
-  <p>
-      - <b>Unarmed Strikes</b> deal 1d4 Bludgeoning Damage.
-      You may choose to add either your <u>Strength OR Dexterity</u> to the Attack Rolls, but only Strength may be added to the Damage Rolls.
-      Unarmed Strikes are considered to have the Open Hand <a href="/weapons">weapon</a> attribute.
-  </p>
-  <p>
-      - <b>Light Weapons</b> may be dual-wielded alongside another Light weapon or an empty hand.
-      For this purpose Unarmed Strikes are considered to have the Light property.
-  </p>
-  <p>
-      - <b>Speed Duels</b> may be performed when you wish to take an action before your target can react (stealing, disarming, quick draw, etc.).
-      To do so, you must use a single Attack and both creatures must roll an Athletics (Wisdom) Check, or an Athletics (Speed) Check if using a Stand.
-      If the attacker rolls higher, they successfully carry out the desired action. Otherwise, nothing happens.
-  </p>
-  <p>
-      - <b>Multiclassing</b> is allowed. For example a Stand User with a Power Type Stand might also choose to use The Ripple.
-      However, each character can only have one Stand. Typically this means each character can only have one Stand Type, but Multi-Type Stands are allowed. 
-      The rules for this are detailed on the <a href="/classes">Classes</a> page.
-  </p>
-  <p>
-      - <b>Doubling/Halving Effects</b> do not stack directly. If you would have multiple effects that double or halve something, each effect increases or decreases the value by an additional 1x.
-      Effects that would triple instead increase by an additional 2x, and so on. For example, 2 doubling effects would result in a 3x multiplier, and a doubling and tripling effect would result in a 4x multiplier.
-      This rule does NOT apply to the calculation of character/Stand Ability Scores, those stack as you'd expect.
-  </p>
-  <p>
-      - <b>Flanking</b> applies a +2 bonus to melee Attack Rolls when you and an ally are on opposite sides of a target.
-      You may not flank with your Stand unless it is a fully separate entity from you (<a href='/classes?focus=Remote'>Remote-Types</a>, <a href='/classes?focus=Independent'>Independent-Types</a>,
-      and the <a href='/feats?focus=Sentient_Stand'>Sentient Stand</a> and <a href='/feats?focus=Uncontrollable_Stand'>Uncontrollable Stand</a> Feats).
-  </p>
-  <p>
-      - <b>Non-Lethal Strikes</b> are always an option when you damage any creature and reduce its HP to 0, causing it to become Downed and Stable so they do not need to make Death Saves.
-  </p>
-  <p>
-      - <b>Limited Resources</b> will not be consumed if they have no effect for any reason. This does not apply to real physical resources like material or ammunition, but game resources such as energy, dice, charges etc.
-  </p>
-  <p>
-      - <b>Weapon Proficiencies</b> may stack. If you gain Proficiency in a weapon you were already Proficient in, you gain Expertise in it instead. If you already have Expertise, you gain Mastery instead.
-  </p>
-</section>
-<section>
-  <h3>Skills</h3>
-  <p>To better fit the settings typically seen in the world of JoJo's, some of the Skills in our system are slightly different.</p>
-  <ul>
-      <li><b>Acrobatics:</b> Uses Dexterity. Used to determine precise movement in the air, balancing abilities, and can be used to contest a grapple/shove.</li>
-      <li><b>Athletics:</b> Uses Strength or Wisdom. Strength is used to determine success of athletic activities that require a sudden burst of strength, such as jumping, climbing, swimming, lifting, pushing, or grappling/shoving. Wisdom/Speed is used to determine the result of Speed Duels.</li>
-      <li><b>Bluff:</b> Uses Charisma. Used to determine deception, bluffing, or other methods of making people believe or think something other than what is true.</li>
-      <li><b>Care:</b> Uses Wisdom or Charisma. Used to determine handling and proper care of animals, children, wounded or elderly people, etc. Wisdom is typically used for dealing with animals, Charisma for people.</li>
-      <li><b>Diplomacy:</b> Uses Charisma. Used to influence other people into thinking or understanding things in a certain way.</li>
-      <li><b>Finesse:</b> Uses Dexterity. Used to determine careful and precise movements including sleight of hand, pickpocketing, and smaller, more delicate movements.</li>
-      <li><b>Grit:</b> Uses Constitution. Used to determine pain tolerance, ability to exert yourself for long periods of time, and ability to handle large amounts of substances.</li>
-      <li><b>Intimidate:</b> Uses Strength or Charisma. Used to threaten or coerce other people with the threat of physical force, or something they fear just as much.</li>
-      <li><b>Investigation:</b> Uses Intelligence. Used for puzzle solving and finding clues, doesn't help you find something, just helps you know if what you sense is relevant or not.</li>
-      <li><b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge, tend to a wounded creature, and bring a downed ally back to 1 HP.</li>
-      <li><b>Knowledge:</b> Uses Intelligence. Used to determine recall of historical information, as well as general information recall.</li>
-      <li><b>Perception:</b> Uses Wisdom. Used to find hidden creatures or objects and detect small sensory details.</li>
-      <li><b>Presence:</b> Uses Charisma. Used to determine success at blending in or standing out in social settings, as well as seeming like you belong in a place, and a measure of your ability to hold an audience's attention</li>
-      <li><b>Science:</b> Uses Intelligence. Used to determine recall of scientific knowledge and understanding, as well as scientific procedure.</li>
-      <li><b>Sneak:</b> Uses Dexterity. Used to determine how well someone can move silently and stay hidden.</li>
-      <li><b>Supernatural:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information regarding religious, spiritual, or otherwise supernatural occurrences, events, and rituals. Wisdom is used to determine part of the cause or effect of a supernatural ability when observing it directly or indirectly.</li>
-      <li><b>Survival:</b>  Uses Intelligence or Wisdom. Intelligence is used for recalling information about the functions of nature, including determining safe or valuable plants. Wisdom is used to determine tracking, creating a trap, or navigating an unknown region.</li>
-      <li><b>Vibe:</b> Uses Wisdom or Charisma. Used to determine if someone may be hiding something, as well as if they have any ulterior motives. Failed checks don't give you false information, they just don't give you any.</li>
-  </ul>
-  <p>The effective conversions from 5e Skills are as follows:</p>
-  <ul>
-      <li>Animal Handling becomes Care</li>
-      <li>Arcana becomes Supernatural</li>
-      <li>Deception becomes Bluff</li>
-      <li>History becomes Knowledge</li>
-      <li>Insight becomes Vibe</li>
-      <li>Intimidation becomes Intimidate</li>
-      <li>Nature becomes Survival</li>
-      <li>Performance becomes Presence</li>
-      <li>Persuasion becomes Diplomacy</li>
-      <li>Religion becomes Supernatural</li>
-      <li>Sleight of Hand becomes Finesse</li>
-      <li>Stealth becomes Sneak</li>
-  </ul>
-</section>
-<section>
-  <h3>Conditions</h3>
-  <p>For the sake of balance and consistency with the setting of JoJo's, Conditions work slightly differently in our system.</p>
-  <ul>
-      <li>
-          <b>Blindness:</b> The afflicted cannot see, failing any sight-based Skill Check. Attack Rolls against Blinded targets have a +4 Bonus, and Blinded creatures have a -4 penalty on melee Attack Rolls.
-          When making a ranged/thrown weapon Attack, a Blinded creature may only target creatures in its Short Range and has a -4 penalty to the Attack Roll. Blinded creatures also have a -4 penalty to Perception Checks.
-          Creatures with skill in some other sense (such as <a href='/abilities?focus=Ripple_Perception'>Ripple Perception</a> or <a href='/feats?focus=Additional_Sense'>Additional Sense</a>)
-          are immune to the penalties of Blindness if they're able to use it to detect what they're aiming or looking for.
-      </li>
-      <li>
-          <b>Charmed:</b> The afflicted cannot attack the charmer or target them with any harmful effects. The charmer has a +4 Bonus on any Check to socially interact with the creature.
-          A Charmed creature cannot be ordered to do anything that would obviously cause them bodily harm.
-      </li>
-      <li>
-          <b>Confusion:</b> The afflicted has a -4 penalty to all mental Checks, Saves, and all Attack Rolls. In addition, they cannot perceive anything over 10 + Perception Bonus meters away from them,
-          automatically failing Perception Checks past that. The -4 penalty does not apply to Saves to remove Confusion.
-      </li>
-      <li>
-          <b>Deafened:</b> The afflicted cannot hear, failing any sound-based Skill Check. They have a -2 penalty to Perception Checks. If a Deafened creature is Flanked, Flanking creatures gain an additional +4 to their Attack Rolls, rather than the typical +2.
-      </li>
-      <li>
-          <b>Decay:</b> The afflicted cannot regain HP or gain Temp HP from any source until the effect ends. However, they may still be revived to 1 HP if Downed.
-      </li>
-      <li>
-          <b>Downed:</b> A creature is Downed when they fall to 0 HP, causing them to become Incapacitated and Prone until they are tended to or healed in some way. A Downed creature drops anything they were holding and may not take actions or perceive anything.
-          Unless they were Downed through a Non-Lethal Strike, the creature must begin rolling Death Saves (DC 10) on each of their Turns. After three successes the creature becomes Stable, no longer needing to make Death Saves unless they're damaged again.
-          After three failed Saves, the creature dies. A Downed creature may be revived and lose this condition through any source of healing, or another creature may spend an Action to make a DC 10 Medicine check to bring the Downed creature back to 1 HP.
-      </li>
-      <li>
-          <b>Exhaustion:</b> There are 6 levels of Exhaustion that a creature may be afflicted with. Each level grants a scaling -2 penalty to all d20 rolls. At level 4, the creature's Movement Speed is halved.
-          At level 5, their maximum HP is halved. At level 6, the creature is immediately Downed and must begin making Death Saves. If a creature with 6 levels of Exhaustion becomes Stable, they remain in a comatose state until they are able to remove a level of Exhaustion.
-          An amount of Exhaustion levels equal to half your Constitution Modifier (minimum of 1) is removed at the end of each Long Rest. 1 level of Exhaustion may be removed during a Short Rest if the creature spends half of their Hit Dice to do so.
-          Exhaustion is typically resisted through Constitution Saves.
-      </li>
-      <li>
-          <b>Frightened:</b> A creature may typically resist becoming Frightened through Wisdom Saves. The effect differs depending on how much they failed the Save by:
-          <ul>
+    <div id="Rules" class="content">
+      <p>
+        - <b>Humans</b> do not get any special racial features or bonuses. Check the <a href="/races?focus=Human">Races
+          page</a> for more information.
+      </p>
+      <p>
+        - <b>Supernatural Checks</b> will be used to help you determine unexplained phenomena.
+        A successful Supernatural Check will reveal if an item has been infused with a special energy, or if it is just
+        a trick that can be explained through conventional technology.
+        For example, if you were to see a floating toaster, a successful Supernatural Check could reveal that it is
+        floating because there are probably magnets inside,
+        or it might clue you that something else is going on.
+        <u>As a Reaction</u>, when you are affected/damaged by an unknown phenomenon that you suspect is an Ability,
+        you may make an Supernatural Check in order to determine the function of the Ability.
+      </p>
+      <p>
+        - <b>Initiative</b> is calculated by adding your <u>Dexterity AND Wisdom</u>
+        instead of just Dex. Stand stats can not be used to calculate initiative.
+      </p>
+      <p>
+        - <b>Talking</b> is a free action. This module is based on JoJo's Bizarre Adventure after all,
+        and it wouldn't be JoJo's without a side character commenting on everything happening, as it happens, even if
+        the talking takes more than 6 seconds.
+      </p>
+      <p>
+        - <b>The Tile System</b> is meter-based. Each 'square' represents 1 meter (3 feet).
+      </p>
+      <p>
+        - <b>The Maximum Level</b> in this module is not necessarily twenty. There are certain characters and enemies
+        that may be more powerful than the normal
+        5e Level cap, but allowing this is up to the DM's discretion.
+      </p>
+      <p>
+        - <b>Bonus Feats</b> are granted to make characters more powerful and interesting. You may select an amount of
+        additional <a href="/feats">Feats</a> equal to your Proficiency Bonus.
+      </p>
+      <p>
+        - <b>Bonus Proficiencies</b> are granted based on a character's Intelligence Modifier.
+        You may pick that number of Skills (minimum of zero) and gain Proficiency in them.
+        You may also swap some or all of these Bonus Proficiencies for Human Languages, Instruments, or Tool
+        Proficiencies.
+        These Proficiencies do not count against any Proficiencies gained by any
+        <a href="/feats">Feats</a> or from your <a href="/passions">Passion</a>.
+      </p>
+      <p>
+        - <b>Armor Class</b> (AC) is calculated as either 10 + Dex + Con, 10 + Dex + Wis,
+        or 10 + Wis + Con. You may still use armor from 5e if you wish, but this 'Unarmored Defense' <u>will not stack
+          with it</u>.
+        The same calculation applies to <a href="/classes?focus=Stands">Stands</a>, with their respective stats.
+      </p>
+      <p>
+        - <b>Medicine Checks</b> may be performed on a character with <u>0 Hit Points</u>.
+        If you succeed the Medicine Check (DC 10), they are not just stabilized, but also return to 1 Hit Point.
+      </p>
+      <p>
+        - <b>Advantage</b> allows you to roll 2 d20s and take the higher result. Disadvantage works the same, but you
+        must take the lower result.
+        If you get two stacks of Advantage, you still only roll 2d20, but get a +2 bonus to the total result for each
+        additional stack of Advantage.
+        The same goes with Disadvantage, but with a -2 penalty for each stack of Disadvantage. Stacks of Advantage and
+        Disadvantage cancel each other out,
+        so if you'd have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage.
+      </p>
+      <p>
+        - <b>Inspiration</b> can be used to reroll something entirely, rather than just granting Advantage. It also has
+        no upper limit in terms of how much you can have and can be given to another character over the course of a
+        Short or Long Rest.
+      </p>
+      <p>
+        - <b>Unarmed Strikes</b> deal 1d4 Bludgeoning Damage.
+        You may choose to add either your <u>Strength OR Dexterity</u> to the Attack Rolls, but only Strength may be
+        added to the Damage Rolls.
+        Unarmed Strikes are considered to have the Open Hand <a href="/weapons">weapon</a> attribute.
+      </p>
+      <p>
+        - <b>Light Weapons</b> may be dual-wielded alongside another Light weapon or an empty hand.
+        For this purpose Unarmed Strikes are considered to have the Light property.
+      </p>
+      <p>
+        - <b>Speed Duels</b> may be performed when you wish to take an action before your target can react (stealing,
+        disarming, quick draw, etc.).
+        To do so, you must use a single Attack and both creatures must roll an Athletics (Wisdom) Check, or an Athletics
+        (Speed) Check if using a Stand.
+        If the attacker rolls higher, they successfully carry out the desired action. Otherwise, nothing happens.
+      </p>
+      <p>
+        - <b>Multiclassing</b> is allowed. For example a Stand User with a Power Type Stand might also choose to use The
+        Ripple.
+        However, each character can only have one Stand. Typically this means each character can only have one Stand
+        Type, but Multi-Type Stands are allowed.
+        The rules for this are detailed on the <a href="/classes">Classes</a> page.
+      </p>
+      <p>
+        - <b>Doubling/Halving Effects</b> do not stack directly. If you would have multiple effects that double or halve
+        something, each effect increases or decreases the value by an additional 1x.
+        Effects that would triple instead increase by an additional 2x, and so on. For example, 2 doubling effects would
+        result in a 3x multiplier, and a doubling and tripling effect would result in a 4x multiplier.
+        This rule does NOT apply to the calculation of character/Stand Ability Scores, those stack as you'd expect.
+      </p>
+      <p>
+        - <b>Flanking</b> applies a +2 bonus to melee Attack Rolls when you and an ally are on opposite sides of a
+        target.
+        You may not flank with your Stand unless it is a fully separate entity from you (<a
+          href='/classes?focus=Remote'>Remote-Types</a>, <a href='/classes?focus=Independent'>Independent-Types</a>,
+        and the <a href='/feats?focus=Sentient_Stand'>Sentient Stand</a> and <a
+          href='/feats?focus=Uncontrollable_Stand'>Uncontrollable Stand</a> Feats).
+      </p>
+      <p>
+        - <b>Non-Lethal Strikes</b> are always an option when you damage any creature and reduce its HP to 0, causing it
+        to become Downed and Stable so they do not need to make Death Saves.
+      </p>
+      <p>
+        - <b>Limited Resources</b> will not be consumed if they have no effect for any reason. This does not apply to
+        real physical resources like material or ammunition, but game resources such as energy, dice, charges etc.
+      </p>
+      <p>
+        - <b>Weapon Proficiencies</b> may stack. If you gain Proficiency in a weapon you were already Proficient in, you
+        gain Expertise in it instead. If you already have Expertise, you gain Mastery instead.
+      </p>
+      </section>
+      <section>
+        <h3>Skills</h3>
+        <p>To better fit the settings typically seen in the world of JoJo's, some of the Skills in our system are
+          slightly different.</p>
+        <ul>
+          <li><b>Acrobatics:</b> Uses Dexterity. Used to determine precise movement in the air, balancing abilities, and
+            can be used to contest a grapple/shove.</li>
+          <li><b>Athletics:</b> Uses Strength or Wisdom. Strength is used to determine success of athletic activities
+            that require a sudden burst of strength, such as jumping, climbing, swimming, lifting, pushing, or
+            grappling/shoving. Wisdom/Speed is used to determine the result of Speed Duels.</li>
+          <li><b>Bluff:</b> Uses Charisma. Used to determine deception, bluffing, or other methods of making people
+            believe or think something other than what is true.</li>
+          <li><b>Care:</b> Uses Wisdom or Charisma. Used to determine handling and proper care of animals, children,
+            wounded or elderly people, etc. Wisdom is typically used for dealing with animals, Charisma for people.</li>
+          <li><b>Diplomacy:</b> Uses Charisma. Used to influence other people into thinking or understanding things in a
+            certain way.</li>
+          <li><b>Finesse:</b> Uses Dexterity. Used to determine careful and precise movements including sleight of hand,
+            pickpocketing, and smaller, more delicate movements.</li>
+          <li><b>Grit:</b> Uses Constitution. Used to determine pain tolerance, ability to exert yourself for long
+            periods of time, and ability to handle large amounts of substances.</li>
+          <li><b>Intimidate:</b> Uses Strength or Charisma. Used to threaten or coerce other people with the threat of
+            physical force, or something they fear just as much.</li>
+          <li><b>Investigation:</b> Uses Intelligence. Used for puzzle solving and finding clues, doesn't help you find
+            something, just helps you know if what you sense is relevant or not.</li>
+          <li><b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge,
+            tend to a wounded creature, and bring a downed ally back to 1 HP.</li>
+          <li><b>Knowledge:</b> Uses Intelligence. Used to determine recall of historical information, as well as
+            general information recall.</li>
+          <li><b>Perception:</b> Uses Wisdom. Used to find hidden creatures or objects and detect small sensory details.
+          </li>
+          <li><b>Presence:</b> Uses Charisma. Used to determine success at blending in or standing out in social
+            settings, as well as seeming like you belong in a place, and a measure of your ability to hold an audience's
+            attention</li>
+          <li><b>Science:</b> Uses Intelligence. Used to determine recall of scientific knowledge and understanding, as
+            well as scientific procedure.</li>
+          <li><b>Sneak:</b> Uses Dexterity. Used to determine how well someone can move silently and stay hidden.</li>
+          <li><b>Supernatural:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information regarding
+            religious, spiritual, or otherwise supernatural occurrences, events, and rituals. Wisdom is used to
+            determine part of the cause or effect of a supernatural ability when observing it directly or indirectly.
+          </li>
+          <li><b>Survival:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information about the
+            functions of nature, including determining safe or valuable plants. Wisdom is used to determine tracking,
+            creating a trap, or navigating an unknown region.</li>
+          <li><b>Vibe:</b> Uses Wisdom or Charisma. Used to determine if someone may be hiding something, as well as if
+            they have any ulterior motives. Failed checks don't give you false information, they just don't give you
+            any.</li>
+        </ul>
+        <p>The effective conversions from 5e Skills are as follows:</p>
+        <ul>
+          <li>Animal Handling becomes Care</li>
+          <li>Arcana becomes Supernatural</li>
+          <li>Deception becomes Bluff</li>
+          <li>History becomes Knowledge</li>
+          <li>Insight becomes Vibe</li>
+          <li>Intimidation becomes Intimidate</li>
+          <li>Nature becomes Survival</li>
+          <li>Performance becomes Presence</li>
+          <li>Persuasion becomes Diplomacy</li>
+          <li>Religion becomes Supernatural</li>
+          <li>Sleight of Hand becomes Finesse</li>
+          <li>Stealth becomes Sneak</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Conditions</h3>
+        <p>For the sake of balance and consistency with the setting of JoJo's, Conditions work slightly differently in
+          our system.</p>
+        <ul>
+          <li>
+            <b>Blindness:</b> The afflicted cannot see, failing any sight-based Skill Check. Attack Rolls against
+            Blinded targets have a +4 Bonus, and Blinded creatures have a -4 penalty on melee Attack Rolls.
+            When making a ranged/thrown weapon Attack, a Blinded creature may only target creatures in its Short Range
+            and has a -4 penalty to the Attack Roll. Blinded creatures also have a -4 penalty to Perception Checks.
+            Creatures with skill in some other sense (such as <a href='/abilities?focus=Ripple_Perception'>Ripple
+              Perception</a> or <a href='/feats?focus=Additional_Sense'>Additional Sense</a>)
+            are immune to the penalties of Blindness if they're able to use it to detect what they're aiming or looking
+            for.
+          </li>
+          <li>
+            <b>Charmed:</b> The afflicted cannot attack the charmer or target them with any harmful effects. The charmer
+            has a +4 Bonus on any Check to socially interact with the creature.
+            A Charmed creature cannot be ordered to do anything that would obviously cause them bodily harm.
+          </li>
+          <li>
+            <b>Confusion:</b> The afflicted has a -4 penalty to all mental Checks, Saves, and all Attack Rolls. In
+            addition, they cannot perceive anything over 10 + Perception Bonus meters away from them,
+            automatically failing Perception Checks past that. The -4 penalty does not apply to Saves to remove
+            Confusion.
+          </li>
+          <li>
+            <b>Deafened:</b> The afflicted cannot hear, failing any sound-based Skill Check. They have a -2 penalty to
+            Perception Checks. If a Deafened creature is Flanked, Flanking creatures gain an additional +4 to their
+            Attack Rolls, rather than the typical +2.
+          </li>
+          <li>
+            <b>Decay:</b> The afflicted cannot regain HP or gain Temp HP from any source until the effect ends. However,
+            they may still be revived to 1 HP if Downed.
+          </li>
+          <li>
+            <b>Downed:</b> A creature is Downed when they fall to 0 HP, causing them to become Incapacitated and Prone
+            until they are tended to or healed in some way. A Downed creature drops anything they were holding and may
+            not take actions or perceive anything.
+            Unless they were Downed through a Non-Lethal Strike, the creature must begin rolling Death Saves (DC 10) on
+            each of their Turns. After three successes the creature becomes Stable, no longer needing to make Death
+            Saves unless they're damaged again.
+            After three failed Saves, the creature dies. A Downed creature may be revived and lose this condition
+            through any source of healing, or another creature may spend an Action to make a DC 10 Medicine check to
+            bring the Downed creature back to 1 HP.
+          </li>
+          <li>
+            <b>Exhaustion:</b> There are 6 levels of Exhaustion that a creature may be afflicted with. Each level grants
+            a scaling -2 penalty to all d20 rolls. At level 4, the creature's Movement Speed is halved.
+            At level 5, their maximum HP is halved. At level 6, the creature is immediately Downed and must begin making
+            Death Saves. If a creature with 6 levels of Exhaustion becomes Stable, they remain in a comatose state until
+            they are able to remove a level of Exhaustion.
+            An amount of Exhaustion levels equal to half your Constitution Modifier (minimum of 1) is removed at the end
+            of each Long Rest. 1 level of Exhaustion may be removed during a Short Rest if the creature spends half of
+            their Hit Dice to do so.
+            Exhaustion is typically resisted through Constitution Saves.
+          </li>
+          <li>
+            <b>Frightened:</b> A creature may typically resist becoming Frightened through Wisdom Saves. The effect
+            differs depending on how much they failed the Save by:
+            <ul>
               <li>
-                  Fear (Failed Save): The afflicted has a -2 penalty to all d20 rolls while they can see or hear the source of their Fear.
+                Fear (Failed Save): The afflicted has a -2 penalty to all d20 rolls while they can see or hear the
+                source of their Fear.
               </li>
               <li>
-                  Terror (Failed by 5+): The afflicted has a -4 penalty to all d20 rolls while they can see or hear the source of their Terror. Additionally, they can only willingly move closer to the source by an amount equal to
-                  half of their Movement Speed each Turn, unless they spend an Attack to move up to their full Movement Speed.
+                Terror (Failed by 5+): The afflicted has a -4 penalty to all d20 rolls while they can see or hear the
+                source of their Terror. Additionally, they can only willingly move closer to the source by an amount
+                equal to
+                half of their Movement Speed each Turn, unless they spend an Attack to move up to their full Movement
+                Speed.
               </li>
               <li>
-                  Panic (Failed by 10+): The afflicted has a -6 penalty to all d20 rolls while they can see or hear the source of their Panic. Additionally, they must use at least half of their Movement Speed to move away from the source
-                  each Turn, unless they spend an Attack to stand their ground or spend 2 or their full Action to move up to half their Movement Speed towards the source.
+                Panic (Failed by 10+): The afflicted has a -6 penalty to all d20 rolls while they can see or hear the
+                source of their Panic. Additionally, they must use at least half of their Movement Speed to move away
+                from the source
+                each Turn, unless they spend an Attack to stand their ground or spend 2 or their full Action to move up
+                to half their Movement Speed towards the source.
               </li>
-          </ul>
-          A Frightened creature may spend their full Action or have an ally use the Help Action on them to reduce their Fright level by 1, removing the condition completely if at the lowest level (Fear).
-      </li>
-      <li>
-          <b>Grappled:</b> The afflicted's Movement Speed is reduced to 0 and they can be easily dragged along, allowing the grappler to move at half their Movement Speed while keeping the target Grappled. The grappler gains a +2 bonus to Attack Rolls against the Grappled creature.
-          Grappled is typically resisted through Strength Saves and Checks or Dexterity Checks.
-      </li>
-      <li>
-          <b>Hypnotized:</b> The afflicted will do whatever they're ordered to do, performing these tasks to the best of their ability. They cannot follow orders that would cause them bodily harm, but do not have control over their faculties otherwise.
-          Hypnotized creatures can perform complicated tasks like social encounters and critical thinking, appearing normal to strangers, but those familiar with the creature will know something is wrong.
-          Hypnotized is typically resisted through Charisma Saves.
-      </li>
-      <li>
-          <b>Incapacitated:</b> The afflicted cannot act in any way.
-      </li>
-      <li>
-          <b>Invisible:</b> The afflicted cannot be seen visually, though they still have a thermal signature and will make noise when moving or interacting with objects. They have a +4 bonus to all Sneak Checks and a +2 bonus to Attack Rolls and Attack Rolls against them have a -2 penalty.
-          A creature that has another way of sensing an Invisible creature such as tremorsense, thermal vision, blindsense, truesight, etc. is unaffected by these penalties and bonuses when perceiving them.
-      </li>
-      <li>
-          <b>Overwhelmed:</b> The afflicted cannot gain buffs, bonuses, or temp HP from any source and has a -2 penalty to all Saving Throws. The -2 penalty does not apply to Saves to remove Overwhelmed.
-          Overwhelmed is typically resisted through Intelligence Saves.
-      </li>
-      <li>
-          <b>Petrified:</b> The afflicted is transformed into a solid and inanimate substance, increasing their weight tenfold and stopping the aging process. They are considered Incapacitated, Restrained, and are unaware of their surroundings.
-          They are also immune to all poison and disease, suspending (but not removing) any existing ailments. They are also considered Resistant to all damage.
-      </li>
-      <li>
-          <b>Poisoned:</b> The afflicted takes an amount of Poison damage equal to their Level at the beginning of each of their Turns. This damage cannot reduce the Poisoned creature to less than half their max HP.
-          They also have a -4 penalty to all physical Checks, Saves, and Attack Rolls. Poisoned is typically resisted through Constitution Saves.
-      </li>
-      <li>
-          <b>Possession:</b> The afflicted has a spirit or other force controlling their body and will do exactly what is ordered of them, performing these tasks to the best of their ability.
-          They cannot perform complicated tasks like social encounters or critical thinking. Possession is typically more intense than Hypnosis, but over a shorter period of time.
-          Possession is typically resisted through Charisma Saves.
-      </li>
-      <li>
-          <b>Prone:</b> Melee Attacks against Prone creatures have Advantage, and Ranged Attacks against them have Disadvantage. A Prone creature may spend half its Movement Speed to stand up and remove the condition.
-          Prone is typically resisted through Strength Saves and Checks or Dexterity Checks.
-      </li>
-      <li>
-          <b>Restrained:</b> The afflicted's Movement Speed becomes 0 and they may not benefit from any bonuses to their Movement Speed. Attack Rolls against Restrained creatures have a +2 bonus and they have a -2 penalty to all Attack Rolls.
-          Additionally, Restrained creatures have a -4 penalty to Strength and Dexterity Saving Throws. Restrained is typically resisted through Strength Saves.
-      </li>
-      <li>
-          <b>Staggered:</b> The afflicted has a -2 penalty to all Saving Throws, as well as Acrobatics and Athletics Checks made to avoid being grappled or shoved. Additionally, creatures targeting a Staggered creature have their Critical range increased by 1 (for example, allowing a 19 to act as a Critical Hit).
-          The -2 penalty does not apply to Saves to remove Staggered.
-      </li>
-      <li>
-          <b>Stunned:</b> The afflicted's actions are limited. When a Stunned creature takes their turn they must choose to either use their Action or Bonus Action, as well as have either half their Movement or their Reaction available.
-          If the Stunned creature chooses to use their Action to Attack, they may only use up to half their number of Attacks with a minimum of 1. The creature may still use any Free Actions they have available.
-          A Stunned creature also has a -2 penalty to all Attack Rolls and a -4 penalty to all Strength and Dexterity Saving Throws. Creatures targeting a Stunned creature gain a +2 bonus to their Attack Rolls.
-      </li>
-  </ul>
-</section>
-<section>
-  <h3>Tools</h3>
-  <p>These items may be acquired and gained Proficiency in through various means. Using them may allow you to make various Skill Checks that you otherwise might not be able to perform.</p>
-  <p>The list of tools and their various use cases is as follows:</p>
-  <ul>
-      <li><b>Artist's Tools</b> are used to create or analyze various forms of artistry, and may specifically be one of the following: A Filmmaker's Camera, Glassmaker's Tools, Jeweler's Tools, Painter's Supplies, Potter's Tools, Sculptor's Tools, Weaver's Tools, Woodcrafter's Tools, Writer's Tools.</li>
-      <li><b>Blacksmith's Tools</b> may be used to maintain metallic weapons or create a basic tool or trinket from metal.</li>
-      <li><b>Chemist's Tools</b> may be used to create basic chemical compounds, identify a chemical, store a small amount of a strange substance, or create chemical reactions.</li>
-      <li><b>Cook's Utensils</b> may be used to create a variety of meals, dice something finely, identify ingredients in a dish, or experiment to find a new dish.</li>
-      <li><b>Diviner's Tools</b> may be used to predict the future, often in ways that don't make sense without context until the moment of truth.</li>
-      <li><b>Engineer's Tools</b> may be used to move something heavy, measure a precise amount of distance, or to repair certain structures or machines that have been damaged.</li>
-      <li><b>Fletcher's Tools</b> may be used to create and maintain weapons and ammunition made out of wood and natural materials, including bows, crossbows, atlatls, spears, clubs, and darts.</li>
-      <li><b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create gunpowder, or create ammunition for such weapons.</li>
-      <li><b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify plants and their potential medicinal purposes.</li>
-      <li><b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely.</li>
-  </ul>
-</section>
-<section>
-    <!--<iframe src="https://www.jojodnd.com/rules/" title="Rule change page" id="RuleWindow"></iframe>-->
+            </ul>
+            A Frightened creature may spend their full Action or have an ally use the Help Action on them to reduce
+            their Fright level by 1, removing the condition completely if at the lowest level (Fear).
+          </li>
+          <li>
+            <b>Grappled:</b> The afflicted's Movement Speed is reduced to 0 and they can be easily dragged along,
+            allowing the grappler to move at half their Movement Speed while keeping the target Grappled. The grappler
+            gains a +2 bonus to Attack Rolls against the Grappled creature.
+            Grappled is typically resisted through Strength Saves and Checks or Dexterity Checks.
+          </li>
+          <li>
+            <b>Hypnotized:</b> The afflicted will do whatever they're ordered to do, performing these tasks to the best
+            of their ability. They cannot follow orders that would cause them bodily harm, but do not have control over
+            their faculties otherwise.
+            Hypnotized creatures can perform complicated tasks like social encounters and critical thinking, appearing
+            normal to strangers, but those familiar with the creature will know something is wrong.
+            Hypnotized is typically resisted through Charisma Saves.
+          </li>
+          <li>
+            <b>Incapacitated:</b> The afflicted cannot act in any way.
+          </li>
+          <li>
+            <b>Invisible:</b> The afflicted cannot be seen visually, though they still have a thermal signature and will
+            make noise when moving or interacting with objects. They have a +4 bonus to all Sneak Checks and a +2 bonus
+            to Attack Rolls and Attack Rolls against them have a -2 penalty.
+            A creature that has another way of sensing an Invisible creature such as tremorsense, thermal vision,
+            blindsense, truesight, etc. is unaffected by these penalties and bonuses when perceiving them.
+          </li>
+          <li>
+            <b>Overwhelmed:</b> The afflicted cannot gain buffs, bonuses, or temp HP from any source and has a -2
+            penalty to all Saving Throws. The -2 penalty does not apply to Saves to remove Overwhelmed.
+            Overwhelmed is typically resisted through Intelligence Saves.
+          </li>
+          <li>
+            <b>Petrified:</b> The afflicted is transformed into a solid and inanimate substance, increasing their weight
+            tenfold and stopping the aging process. They are considered Incapacitated, Restrained, and are unaware of
+            their surroundings.
+            They are also immune to all poison and disease, suspending (but not removing) any existing ailments. They
+            are also considered Resistant to all damage.
+          </li>
+          <li>
+            <b>Poisoned:</b> The afflicted takes an amount of Poison damage equal to their Level at the beginning of
+            each of their Turns. This damage cannot reduce the Poisoned creature to less than half their max HP.
+            They also have a -4 penalty to all physical Checks, Saves, and Attack Rolls. Poisoned is typically resisted
+            through Constitution Saves.
+          </li>
+          <li>
+            <b>Possession:</b> The afflicted has a spirit or other force controlling their body and will do exactly what
+            is ordered of them, performing these tasks to the best of their ability.
+            They cannot perform complicated tasks like social encounters or critical thinking. Possession is typically
+            more intense than Hypnosis, but over a shorter period of time.
+            Possession is typically resisted through Charisma Saves.
+          </li>
+          <li>
+            <b>Prone:</b> Melee Attacks against Prone creatures have Advantage, and Ranged Attacks against them have
+            Disadvantage. A Prone creature may spend half its Movement Speed to stand up and remove the condition.
+            Prone is typically resisted through Strength Saves and Checks or Dexterity Checks.
+          </li>
+          <li>
+            <b>Restrained:</b> The afflicted's Movement Speed becomes 0 and they may not benefit from any bonuses to
+            their Movement Speed. Attack Rolls against Restrained creatures have a +2 bonus and they have a -2 penalty
+            to all Attack Rolls.
+            Additionally, Restrained creatures have a -4 penalty to Strength and Dexterity Saving Throws. Restrained is
+            typically resisted through Strength Saves.
+          </li>
+          <li>
+            <b>Staggered:</b> The afflicted has a -2 penalty to all Saving Throws, as well as Acrobatics and Athletics
+            Checks made to avoid being grappled or shoved. Additionally, creatures targeting a Staggered creature have
+            their Critical range increased by 1 (for example, allowing a 19 to act as a Critical Hit).
+            The -2 penalty does not apply to Saves to remove Staggered.
+          </li>
+          <li>
+            <b>Stunned:</b> The afflicted's actions are limited. When a Stunned creature takes their turn they must
+            choose to either use their Action or Bonus Action, as well as have either half their Movement or their
+            Reaction available.
+            If the Stunned creature chooses to use their Action to Attack, they may only use up to half their number of
+            Attacks with a minimum of 1. The creature may still use any Free Actions they have available.
+            A Stunned creature also has a -2 penalty to all Attack Rolls and a -4 penalty to all Strength and Dexterity
+            Saving Throws. Creatures targeting a Stunned creature gain a +2 bonus to their Attack Rolls.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Tools</h3>
+        <p>These items may be acquired and gained Proficiency in through various means. Using them may allow you to make
+          various Skill Checks that you otherwise might not be able to perform.</p>
+        <p>The list of tools and their various use cases is as follows:</p>
+        <ul>
+          <li><b>Artist's Tools</b> are used to create or analyze various forms of artistry, and may specifically be one
+            of the following: A Filmmaker's Camera, Glassmaker's Tools, Jeweler's Tools, Painter's Supplies, Potter's
+            Tools, Sculptor's Tools, Weaver's Tools, Woodcrafter's Tools, Writer's Tools.</li>
+          <li><b>Blacksmith's Tools</b> may be used to maintain metallic weapons or create a basic tool or trinket from
+            metal.</li>
+          <li><b>Chemist's Tools</b> may be used to create basic chemical compounds, identify a chemical, store a small
+            amount of a strange substance, or create chemical reactions.</li>
+          <li><b>Cook's Utensils</b> may be used to create a variety of meals, dice something finely, identify
+            ingredients in a dish, or experiment to find a new dish.</li>
+          <li><b>Diviner's Tools</b> may be used to predict the future, often in ways that don't make sense without
+            context until the moment of truth.</li>
+          <li><b>Engineer's Tools</b> may be used to move something heavy, measure a precise amount of distance, or to
+            repair certain structures or machines that have been damaged.</li>
+          <li><b>Fletcher's Tools</b> may be used to create and maintain weapons and ammunition made out of wood and
+            natural materials, including bows, crossbows, atlatls, spears, clubs, and darts.</li>
+          <li><b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create
+            gunpowder, or create ammunition for such weapons.</li>
+          <li><b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify
+            plants and their potential medicinal purposes.</li>
+          <li><b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <!--<iframe src="https://www.jojodnd.com/rules/" title="Rule change page" id="RuleWindow"></iframe>-->
+    </div>
   </div>
-</div>
   <hr id="lineD" />
   <div id="diceCont">
-  <h2 id="diceTitle" class="display-heading"><a id="6"></a>
-    Attack & Damage Reference
-  </h2>
-  <div id="diceBox" class="content">
-    <table class='tablez table-sm table-striped minor center'>
-      <thead>
-        <tr>
-          <th colspan="3" class="center">Stand Attack Dice</th>
-        </tr>
-        <tr>
-          <th>Class</th>
-          <th>Base Dice</th>
-          <th>Upgraded</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Power</td>
-          <td>1d12</td>
-          <td>2d10</td>
-        </tr>
-        <tr>
-          <td>Ranged</td>
-          <td>1d6</td>
-          <td>2d6</td>
-        </tr>
-        <tr>
-          <td>Remote</td>
-          <td>1d10</td>
-          <td>2d8</td>
-        </tr>
-        <tr>
-          <td>Ability</td>
-          <td>1d4</td>
-          <td>1d6</td>
-        </tr>
-        <tr>
-          <td>Enhancement</td>
-          <td>1d10</td>
-          <td>2d8</td>
-        </tr>
-        <tr>
-          <td>Revenge</td>
-          <td>1d12</td>
-          <td>2d10</td>
-        </tr>
-        <tr>
-          <td>Independent</td>
-          <td>1d8</td>
-          <td>2d6</td>
-        </tr>
-        <tr>
-          <td>Hive</td>
-          <td>1d6/1d10</td>
-          <td>2d6/2d10</td>
-        </tr>
-        <tr>
-          <td>Act 1</td>
-          <td colspan="2">1d4</td>
-        </tr>
-        <tr>
-          <td>Act 2</td>
-          <td colspan="2">1d8</td>
-        </tr>
-        <tr>
-          <td>Act 3</td>
-          <td colspan="2">2d8</td>
-        </tr>
-      </tbody>
-    </table>
-    <table class='tablez table-sm table-striped minor center'>
-      <thead>
-        <tr>
-          <th colspan="4">Spin &amp; Ripple Attack Dice</th>
-        </tr>
-        <tr>
-          <th>Level</th>
-          <th>Hamon</th>
-          <th>Level</th>
-          <th>Spin</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1-4</td>
-          <td>2d6</td>
-          <td>1-4</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>5-9</td>
-          <td>2d8</td>
-          <td>5-8</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>10-14</td>
-          <td>2d10</td>
-          <td>9-12</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>15-16</td>
-          <td rowspan="3">2d12</td>
-          <td>13-16</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>17-19</td>
-          <td>17-19</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>20</td>
-          <td>6</td>
-        </tr>
-      </tbody>
-    </table>
-    
+    <h2 id="diceTitle" class="display-heading"><a id="6"></a>
+      Attack & Damage Reference
+    </h2>
+    <div id="diceBox" class="content">
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th colspan="3" class="center">Stand Attack Dice</th>
+          </tr>
+          <tr>
+            <th>Class</th>
+            <th>Base Dice</th>
+            <th>Upgraded</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Power</td>
+            <td>1d12</td>
+            <td>2d10</td>
+          </tr>
+          <tr>
+            <td>Ranged</td>
+            <td>1d6</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>Remote</td>
+            <td>1d10</td>
+            <td>2d8</td>
+          </tr>
+          <tr>
+            <td>Ability</td>
+            <td>1d4</td>
+            <td>1d6</td>
+          </tr>
+          <tr>
+            <td>Enhancement</td>
+            <td>1d10</td>
+            <td>2d8</td>
+          </tr>
+          <tr>
+            <td>Revenge</td>
+            <td>1d12</td>
+            <td>2d10</td>
+          </tr>
+          <tr>
+            <td>Independent</td>
+            <td>1d8</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>Hive</td>
+            <td>1d6/1d10</td>
+            <td>2d6/2d10</td>
+          </tr>
+          <tr>
+            <td>Act 1</td>
+            <td colspan="2">1d4</td>
+          </tr>
+          <tr>
+            <td>Act 2</td>
+            <td colspan="2">1d8</td>
+          </tr>
+          <tr>
+            <td>Act 3</td>
+            <td colspan="2">2d8</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th colspan="4">Spin &amp; Ripple Attack Dice</th>
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th>Hamon</th>
+            <th>Level</th>
+            <th>Spin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-4</td>
+            <td>2d6</td>
+            <td>1-4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>5-9</td>
+            <td>2d8</td>
+            <td>5-8</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>10-14</td>
+            <td>2d10</td>
+            <td>9-12</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>15-16</td>
+            <td rowspan="3">2d12</td>
+            <td>13-16</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>17-19</td>
+            <td>17-19</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>20</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+
       <h2>Damage Types (5e Damage Types)</h2>
       <ul>
-        <li><b>Acid</b>: Abilities or substances that eat away at most materials. Sulfuric Acid, and abilities like <a href="https://jojowiki.com/Yellow_Temperance#Anime-0">Yellow Temperance</a> and <a href="https://jojowiki.com/Yo-Yo_Ma#Anime-0">Yo-Yo Ma</a> deal Acid damage.</li>
-        <li><b>Bludgeoning</b>: One of the physical damage types. Blunt weapons, Unarmed Strikes, and most stands deal bludgeoning damage as a default. Getting punched, hit by a log, or having a ceiling cave in on you would deal Bludgeoning.</li>
-        <li><b>Cold</b>: Abilities, substances, or weather conditions that drop something’s temperature deal Cold damage. Abilities such as the <a href="https://jojowiki.com/Vampire#Vaporization_Freezing_Technique">Vampiric Freezing Technique</a> and <a href="https://jojowiki.com/White_Album#Anime-0">White Album</a> deal cold damage.</li>
-        <li><b>Fire</b>: Flame/Heat abilities, exposure to extreme heat, and plasma all raise something’s temperature so dramatically that they tend to leave a burn. Abilities such as <a href="https://jojowiki.com/Esidisi#Anime-0">Esidisi's</a> Burning Blood, <a href="https://jojowiki.com/Magician%27s_Red#OVA-0">Magician’s Red</a>, and <a href="https://jojowiki.com/Speed_King">Speed King</a> all deal Fire damage.</li>
-        <li><b>Force</b>: Abilities or effects that cause force are the result of time/space abilities, attacks of pure energy, or disintegration. Necrosis and exposure to radiation, as well as abilities such as <a href="https://jojowiki.com/Cream#Anime-0">Cream</a>, <a href="https://jojowiki.com/The_Hand#Anime-0">The Hand</a>, <a href="https://jojowiki.com/Killer_Queen#Anime-0">Killer Queen</a>, and the <a href="https://jojowiki.com/Spin">Spin</a> all deal Force damage.</li>
-        <li><b>Lightning</b>: Abilities or effects that cause Lightning damage come from electricity in all its forms. Getting tangled in power lines, struck by lightning, or <a href="https://jojowiki.com/Red_Hot_Chili_Pepper#Anime-0">Red Hot Chili Pepper’s</a> ability all deal Lightning damage.</li>
-        <li><b>Necrotic</b>: Abilities that cause rapid decay, necrosis, radiation, or drain one’s life force. <a href="https://jojowiki.com/Highway_Star#Anime-0">Highway Star</a>, <a href="https://jojowiki.com/Purple_Haze#Anime-0">Purple Haze</a> all deal Necrotic damage.</li>
-        <li><b>Piercing</b>: One of the physical damage types. Most guns and stabbing weapons deal Piercing. Getting shanked, shot, or falling into a pit of spikes would all deal piercing damage.</li>
-        <li><b>Poison</b>: Substances that cause bodily harm and illness to living creatures. Sicknesses, harmful substances or poisons, as well as Abilities like <a href="https://jojowiki.com/Ratt#Anime-0">Ratt</a>, <a href="https://jojowiki.com/Green_Day#Anime-0">Green Day</a>, and <a href="https://jojowiki.com/Brain_Storm">Brain Storm</a> deal Poison damage. Constructs and Undead are immune to this damage.</li>
-        <li><b>Psychic</b>: Effects that cause significant mental stress and effects that attack one’s mind. <a href="https://jojowiki.com/Lovers#Anime-0">Lovers</a> and <a href="https://jojowiki.com/Echoes#ACT1:_Sound_Generation">Echoes Act 1</a> would deal psychic damage.</li>
-        <li><b>Radiant</b>: Damage from a laser, The UV Rays put off by the sun, as well as the Ripple. Getting hit with a magnified sunbeam, powerful laser, or an attack from a ripple user would deal Radiant damage. Incredibly effective against Undead.</li>
-        <li><b>Slashing</b>: One of the physical damage types. Bladed weapons, claws, and anything that deals damage by slicing deals slashing damage.</li>
-        <li><b>Thunder</b>: Effects that are sound-based, or explosive. Getting caught in a grenade’s radius, getting hit with a sound or shock wave, or abilities like <a href="https://jojowiki.com/Oasis#Anime-0">Oasis’s</a> underground attack, as well as <a href="https://jojowiki.com/Echoes#ACT2:_Sound_Effects">Echoes Act 2</a> and <a href="https://jojowiki.com/In_a_Silent_Way">In a Silent Way</a> would deal Thunder damage.</li>
-        </ul>
-  </div>
-</div>
-  <hr id="lineE" />
-  <div id="NotesCont">
-  <h2 id="Notes" class="display-heading"><a id="7"></a>
-    Notes
-  </h2>
-  <div id="noteBox" class="content">
-    <h4 class="display-heading">
-      General Notes
-    </h4>
-    <textarea id="general" type=text placeholder="Important stuff" class="notepad bg-warning"></textarea>
-    <h4 class="display-heading">
-      Ability Notes
-    </h4>
-    <textarea id="ability" type=text placeholder="Use this box for notes on any complex Stand/Ripple/Spin abilities."
-      class="notepad bg-warning"></textarea>
-    <h4 class="display-heading">
-      Session Plan/Encounter Notes
-    </h4>
-    <textarea type=text id="plan"
-      placeholder="Use this box for notes on your plan for the session! You can use this for any simple notes you want available as well."
-      class="notepad bg-warning"></textarea>
-  </div>
-</div>
-  <hr id="lineF" />
-  <div id="randomCont">
-  <h2 id="random" class="display-heading"><a id="8"></a>
-    Random Tables
-  </h2>
-  <div id="randomBox" class="content">
-    <table class='tablez table-sm table-striped minor center'>
-      <thead>
-        <tr>
-          <th>Dice</th>
-          <th>Examples</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1d10</td>
-          <td>Burned by coals, hit by a falling bookcase, pricked by a poison needle</td>
-        </tr>
-        <tr>
-          <td>2d10</td>
-          <td>Being struck by lightning, stumbling into a fire pit</td>
-        </tr>
-        <tr>
-          <td>4d10</td>
-          <td>Hit by falling rubble in a collapsing tunnel, stumbling into a vat of acid</td>
-        </tr>
-        <tr>
-          <td>10d10</td>
-          <td>Crushed by compacting walls, hit by whirling steel blades, wading through a lava stream</td>
-        </tr>
-        <tr>
-          <td>18d10</td>
-          <td>Being submerged in lava, being hit by a crashing flying fortress</td>
-        </tr>
-        <tr>
-          <td>24d10</td>
-          <td>Tumbling into a vortex of fire on the Elemental Plane of Fire, being crushed in the jaws of a godlike
-            creature or moon-sized monster | Getting blown up</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <table class='tablez table-sm table-striped minor center'>
-      <thead>
-        <tr>
-          <th id="removeBorder"></th>
-          <th colspan="3">Dice</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Level</td>
-          <td>Setback</td>
-          <td>Dangerous</td>
-          <td>Deadly</td>
-        </tr>
-        <tr>
-          <td>1st–4th</td>
-          <td>1d10</td>
-          <td>2d10</td>
-          <td>4d10</td>
-        </tr>
-        <tr>
-          <td>5th–10th</td>
-          <td>2d10</td>
-          <td>4d10</td>
-          <td>10d10</td>
-        </tr>
-        <tr>
-          <td>11th–16th</td>
-          <td>4d10</td>
-          <td>10d10</td>
-          <td>18d10</td>
-        </tr>
-        <tr>
-          <td>17th–20th</td>
-          <td>10d10</td>
-          <td>18d10</td>
-          <td>24d10</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4 class='display-heading'>Detriments (Locacaca)</h4>
-    <table id='stone' class='tablez table-striped'>
-      <thead>
-        <tr>
-          <th class="d20">d20</th>
-          <th>Part Turned To Stone</th>
-          <th>Effect</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Inner Heart Valve</td>
-          <td>1 Force damage at the start of each Turn (every 6 Seconds), this damage cannot be reduced or removed in
-            any way.</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Inner Brain</td>
-          <td>Gain 5 Levels of Exhaustion and fall into a coma.</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Stomach</td>
-          <td>Food (other than the Locacaca Fruit) may no longer be digested, and stomach acid will begin to leak into
-            the body after 6 hours.</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Small Intestinal Fragment</td>
-          <td>Results in half-digested food being pushed into the body, outside of the organs.</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Anus</td>
-          <td>Improper solid waste disposal, which will eventually result in an intestinal rupture, likely within the
-            next few days.</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Left Arm</td>
-          <td>Past the elbow, the left arm becomes unusable.</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Right Arm</td>
-          <td>Past the elbow, the right arm becomes unusable.</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Both Feet</td>
-          <td>From the ankles down, the feet become totally unusable and walking speed is reduced by 5 meters.</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Lung</td>
-          <td>Chest feels heavy, half lung capacity, easily winded and, cannot take the Dash Action.</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Left Ear</td>
-          <td>Lose hearing in the left ear.</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Right Ear</td>
-          <td>Lose hearing in the right ear.</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>Jaw</td>
-          <td>Inability to speak properly or chew food normally.</td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>Left Eye</td>
-          <td>Lose sight in the left eye.</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>Right Eye</td>
-          <td>Lose sight in the right eye.</td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>Appendix</td>
-          <td>Minor, continued discomfort in the abdomen.</td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>Left Kidney</td>
-          <td>The left kidney shuts down completely.</td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td>Right Kidney</td>
-          <td>The right kidney shuts down completely.</td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td>Teeth</td>
-          <td>Regular teeth fall out and are replaced with stone teeth in the same shape.</td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td>Nose</td>
-          <td>Lose ability to breathe through the nose, as well as all sense of smell. This also alters the sense of
-            taste.</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>Reproductive Organs</td>
-          <td>Sterility</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4 class="display-heading">
-      Random Stand Type Table
-    </h4>
-    <table class="tablez table-striped minor center">
-      <thead>
-        <tr>
-          <th id="rand-type">d100</th>
-          <th>Stand Type</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1-35</td>
-          <td>Power</td>
-        </tr>
-        <tr>
-          <td>36-49</td>
-          <td>Ranged</td>
-        </tr>
-        <tr>
-          <td>50-69</td>
-          <td>Enhancement</td>
-        </tr>
-        <tr>
-          <td>70-79</td>
-          <td>Remote</td>
-        </tr>
-        <tr>
-          <td>80-89</td>
-          <td>Ability</td>
-        </tr>
-        <tr>
-          <td>90-93</td>
-          <td>Independent</td>
-        </tr>
-        <tr>
-          <td>94-97</td>
-          <td>Hive</td>
-        </tr>
-        <tr>
-          <td>98-99</td>
-          <td>Revenge</td>
-        </tr>
-        <tr>
-          <td>100</td>
-          <td>Act</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-  <hr id="lineG" />
-  <div id="weaponCont">
-  <h2 id="weaponTitle" class="display-heading"><a id="9"></a>
-    Weapon Reference
-  </h2>
-  <div id="weaponBox" class="content">
-    <h4 class="display-heading center">
-      Weapon Attributes
-    </h4>
-    <ul>
-      <li>
-        <b>AC Bonus</b>: This weapon grants a bonus to your AC while it is equipped.
-      </li>
-      <li>
-        <b>Ambush</b>: This weapon always crits when attacking a Surprised target.
-      </li>
-      <li>
-        <b>Bulky</b>: This weapon must be braced using a Bonus Action in order to attack with it. Once braced, you
-        remain braced until you move.
-      </li>
-      <li>
-        <b>Complex</b>: This weapon takes a total of three Attacks to reload.
-      </li>
-      <li>
-        <b>Concealed</b>: This weapon grants a bonus to any Check made to conceal it.
-      </li>
-      <li>
-        <b>Conductive</b>: Energy currents, such as electricity or Ripple, may be run through this weapon."
-      </li>
-      <li>
-        <b>Firearm</b>: This weapon makes a loud sound which can be heard up to 0.5km away. It also jams if a natural 1
-        is rolled while using it. This weapon's ammunition doesn't function when wet.
-      </li>
-      <li>
-        <b>Flame</b>: When a targeted creature or object takes fire damage from this weapon, it is set ablaze (assuming
-        the target is flammable).
-      </li>
-      <li>
-        <b>Hunker</b>: While holding this item, if you've not moved this turn, you may gain Cover as a Bonus Action
-        until the start of your turn, though this also reduces your Movement Speed to 0.
-      </li>
-      <li>
-        <b>Light</b>: This weapon is light and easy to handle, allowing you to make an additional attack using another
-        Light weapon in your other hand as a Bonus Action.
-      </li>
-      <li>
-        <b>Point Blank</b>: This weapon does not impose Disadvantage if fired within melee.
-      </li>
-      <li>
-        <b>Radius</b>: This weapon forces all creatures within a certain radius of the target to make a Dexterity Saving
-        Throw, taking half damage on success and full damage on failure.
-      </li>
-      <li>
-        <b>Ranged</b>: This weapon can fire up to its Short Range, or as far as its Long Range with Disadvantage. Firing
-        within melee imposes Disadvantage.
-      </li>
-      <li>
-        <b>Reach</b>: This weapon can attack targets from an additional meter away.
-      </li>
-      <li>
-        <b>Reliable</b>: This weapon does not jam if you roll a natural 1.
-      </li>
-      <li>
-        <b>Reload</b>: This weapon can be used a limited amount of times before needing to be reloaded. Reloading takes
-        a full Attack.
-      </li>
-      <li>
-        <b>Remote</b>: This weapon can be detonated as a Bonus Action from up to 1km away.
-      </li>
-      <li>
-        <b>Return</b>: After making a Thrown Weapon attack with the weapon, you may use your Reaction to catch it,
-        putting it back in your inventory.
-      </li>
-      <li>
-        <b>Siege</b>: This weapon deals double damage to objects.
-      </li>
-      <li>
-        <b>Timer</b>: A timer may be set on this weapon, detonating it once the timer runs out. The timer may be set for
-        up to 12 hours.
-      </li>
-      <li>
-        <b>Thrown</b>: This weapon can be thrown up to its Short Range, or as far as its Long Range with Disadvantage.
-        Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case
-        it is destroyed).
-      </li>
-      <li>
-        <b>Two-Handed</b>: This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be
-        carried (but not used) with one hand if desired.
-      </li>
-    </ul>
-    <hr/>
-    <div id="weapFeats">
-      <p>Demolitionist</p>
-      <ul>
-        <li>Proficiency in Explosives &amp; Expertise in them if you already are proficient with them.</li>
-        <li>Explosive Save DC +2</li>
-        <li>Advantage on anything explosive related</li>
-      </ul>
-      <p>Heavy Specialization</p>
-      <ul>
-        <li>Proficiency in Heavy Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>+2 to your AC until start of next turn when bracing with a heavy weapon</li>
-      </ul>
-      <p>Martial Arts</p>
-      <ul>
-        <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>Expertise in unarmed strikes and stand melee</li>
-        <li>1d8 unarmed strikes</li>
-        <li>When Grappling or Shoving, you can use Dex or Str</li>
-        <li>Full action Grapple, If you are successful, the target is restrained indefinitely until you use your action
-          for something else or you move.</li>
-      </ul>
-      <p>Melee Specialization</p>
-      <ul>
-        <li>Proficiency in Melee Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>1/turn you may reroll damage dice for a melee weapon</li>
-        <li>While wielding yo can take the 5e Parry (Add PB to AC) reaction if hit</li>
-      </ul>
-      <p>Professional Weapon Training</p>
-      <ul>
-        <li>Proficiency in Simple and Martial Weapons &amp; Expertise in them if you already are proficient with them.
+        <li><b>Acid</b>: Abilities or substances that eat away at most materials. Sulfuric Acid, and abilities like <a
+            href="https://jojowiki.com/Yellow_Temperance#Anime-0">Yellow Temperance</a> and <a
+            href="https://jojowiki.com/Yo-Yo_Ma#Anime-0">Yo-Yo Ma</a> deal Acid damage.</li>
+        <li><b>Bludgeoning</b>: One of the physical damage types. Blunt weapons, Unarmed Strikes, and most stands deal
+          bludgeoning damage as a default. Getting punched, hit by a log, or having a ceiling cave in on you would deal
+          Bludgeoning.</li>
+        <li><b>Cold</b>: Abilities, substances, or weather conditions that drop something’s temperature deal Cold
+          damage. Abilities such as the <a href="https://jojowiki.com/Vampire#Vaporization_Freezing_Technique">Vampiric
+            Freezing Technique</a> and <a href="https://jojowiki.com/White_Album#Anime-0">White Album</a> deal cold
+          damage.</li>
+        <li><b>Fire</b>: Flame/Heat abilities, exposure to extreme heat, and plasma all raise something’s temperature so
+          dramatically that they tend to leave a burn. Abilities such as <a
+            href="https://jojowiki.com/Esidisi#Anime-0">Esidisi's</a> Burning Blood, <a
+            href="https://jojowiki.com/Magician%27s_Red#OVA-0">Magician’s Red</a>, and <a
+            href="https://jojowiki.com/Speed_King">Speed King</a> all deal Fire damage.</li>
+        <li><b>Force</b>: Abilities or effects that cause force are the result of time/space abilities, attacks of pure
+          energy, or disintegration. Necrosis and exposure to radiation, as well as abilities such as <a
+            href="https://jojowiki.com/Cream#Anime-0">Cream</a>, <a href="https://jojowiki.com/The_Hand#Anime-0">The
+            Hand</a>, <a href="https://jojowiki.com/Killer_Queen#Anime-0">Killer Queen</a>, and the <a
+            href="https://jojowiki.com/Spin">Spin</a> all deal Force damage.</li>
+        <li><b>Lightning</b>: Abilities or effects that cause Lightning damage come from electricity in all its forms.
+          Getting tangled in power lines, struck by lightning, or <a
+            href="https://jojowiki.com/Red_Hot_Chili_Pepper#Anime-0">Red Hot Chili Pepper’s</a> ability all deal
+          Lightning damage.</li>
+        <li><b>Necrotic</b>: Abilities that cause rapid decay, necrosis, radiation, or drain one’s life force. <a
+            href="https://jojowiki.com/Highway_Star#Anime-0">Highway Star</a>, <a
+            href="https://jojowiki.com/Purple_Haze#Anime-0">Purple Haze</a> all deal Necrotic damage.</li>
+        <li><b>Piercing</b>: One of the physical damage types. Most guns and stabbing weapons deal Piercing. Getting
+          shanked, shot, or falling into a pit of spikes would all deal piercing damage.</li>
+        <li><b>Poison</b>: Substances that cause bodily harm and illness to living creatures. Sicknesses, harmful
+          substances or poisons, as well as Abilities like <a href="https://jojowiki.com/Ratt#Anime-0">Ratt</a>, <a
+            href="https://jojowiki.com/Green_Day#Anime-0">Green Day</a>, and <a
+            href="https://jojowiki.com/Brain_Storm">Brain Storm</a> deal Poison damage. Constructs and Undead are immune
+          to this damage.</li>
+        <li><b>Psychic</b>: Effects that cause significant mental stress and effects that attack one’s mind. <a
+            href="https://jojowiki.com/Lovers#Anime-0">Lovers</a> and <a
+            href="https://jojowiki.com/Echoes#ACT1:_Sound_Generation">Echoes Act 1</a> would deal psychic damage.</li>
+        <li><b>Radiant</b>: Damage from a laser, The UV Rays put off by the sun, as well as the Ripple. Getting hit with
+          a magnified sunbeam, powerful laser, or an attack from a ripple user would deal Radiant damage. Incredibly
+          effective against Undead.</li>
+        <li><b>Slashing</b>: One of the physical damage types. Bladed weapons, claws, and anything that deals damage by
+          slicing deals slashing damage.</li>
+        <li><b>Thunder</b>: Effects that are sound-based, or explosive. Getting caught in a grenade’s radius, getting
+          hit with a sound or shock wave, or abilities like <a href="https://jojowiki.com/Oasis#Anime-0">Oasis’s</a>
+          underground attack, as well as <a href="https://jojowiki.com/Echoes#ACT2:_Sound_Effects">Echoes Act 2</a> and
+          <a href="https://jojowiki.com/In_a_Silent_Way">In a Silent Way</a> would deal Thunder damage.
         </li>
-      </ul>
-      <p>Rifle Specialization</p>
-      <ul>
-        <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>A 19 or 20 is a crit with Rifles</li>
-        <li>No disadvantage at long range with Rifle</li>
-      </ul>
-      <p>Shotgun Specialization</p>
-      <ul>
-        <li>Proficiency in Shotguns &amp; Expertise in them if you already are proficient with them.</li>
-        <li>When shooting medium or smaller creature at short range, you can choose to halve damage to force them to
-          make a DC 8 + Con Mod +PB Con save, On a fail they are knocked prone</li>
-      </ul>
-      <p>Sidearm Specialization</p>
-      <ul>
-        <li>Proficiency in Sidearms &amp; Expertise in them if you already are proficient with them.</li>
-        <li>Free action reload with Sidearms</li>
-      </ul>
-      <p>Simple Weapon Focus</p>
-      <ul>
-        <li>Proficiency in Simple Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>Add PB to damage on Melee, or a second time to attack roll with ranged</li>
-      </ul>
-      <p>Tavern Brawler</p>
-      <ul>
-        <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>When attacking on your turn, you may make an additional improvised weapon attack as a bonus action, or
-          Grapple/Shove a target as a bonus action</li>
-      </ul>
-      <p>Thrown Weapon Specialization</p>
-      <ul>
-        <li>Proficiency in Thrown Weapons &amp; Expertise in them if you already are proficient with them.</li>
-        <li>Draw a Thrown weapon as a free action</li>
-        <li>Throw 2 same thrown/improvised weapons as a single attack. This cannot be done with spin spheres</li>
       </ul>
     </div>
   </div>
-</div>
+  <hr id="lineE" />
+  <div id="NotesCont">
+    <h2 id="Notes" class="display-heading"><a id="7"></a>
+      Notes
+    </h2>
+    <div id="noteBox" class="content">
+      <h4 class="display-heading">
+        General Notes
+      </h4>
+      <textarea id="general" type=text placeholder="Important stuff" class="notepad bg-warning"></textarea>
+      <h4 class="display-heading">
+        Ability Notes
+      </h4>
+      <textarea id="ability" type=text placeholder="Use this box for notes on any complex Stand/Ripple/Spin abilities."
+        class="notepad bg-warning"></textarea>
+      <h4 class="display-heading">
+        Session Plan/Encounter Notes
+      </h4>
+      <textarea type=text id="plan"
+        placeholder="Use this box for notes on your plan for the session! You can use this for any simple notes you want available as well."
+        class="notepad bg-warning"></textarea>
+    </div>
+  </div>
+  <hr id="lineF" />
+  <div id="randomCont">
+    <h2 id="random" class="display-heading"><a id="8"></a>
+      Random Tables
+    </h2>
+    <div id="randomBox" class="content">
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th>Dice</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1d10</td>
+            <td>Burned by coals, hit by a falling bookcase, pricked by a poison needle</td>
+          </tr>
+          <tr>
+            <td>2d10</td>
+            <td>Being struck by lightning, stumbling into a fire pit</td>
+          </tr>
+          <tr>
+            <td>4d10</td>
+            <td>Hit by falling rubble in a collapsing tunnel, stumbling into a vat of acid</td>
+          </tr>
+          <tr>
+            <td>10d10</td>
+            <td>Crushed by compacting walls, hit by whirling steel blades, wading through a lava stream</td>
+          </tr>
+          <tr>
+            <td>18d10</td>
+            <td>Being submerged in lava, being hit by a crashing flying fortress</td>
+          </tr>
+          <tr>
+            <td>24d10</td>
+            <td>Tumbling into a vortex of fire on the Elemental Plane of Fire, being crushed in the jaws of a godlike
+              creature or moon-sized monster | Getting blown up</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class='tablez table-sm table-striped minor center'>
+        <thead>
+          <tr>
+            <th id="removeBorder"></th>
+            <th colspan="3">Dice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Level</td>
+            <td>Setback</td>
+            <td>Dangerous</td>
+            <td>Deadly</td>
+          </tr>
+          <tr>
+            <td>1st–4th</td>
+            <td>1d10</td>
+            <td>2d10</td>
+            <td>4d10</td>
+          </tr>
+          <tr>
+            <td>5th–10th</td>
+            <td>2d10</td>
+            <td>4d10</td>
+            <td>10d10</td>
+          </tr>
+          <tr>
+            <td>11th–16th</td>
+            <td>4d10</td>
+            <td>10d10</td>
+            <td>18d10</td>
+          </tr>
+          <tr>
+            <td>17th–20th</td>
+            <td>10d10</td>
+            <td>18d10</td>
+            <td>24d10</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 class='display-heading'>Detriments (Locacaca)</h4>
+      <table id='stone' class='tablez table-striped'>
+        <thead>
+          <tr>
+            <th class="d20">d20</th>
+            <th>Part Turned To Stone</th>
+            <th>Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Inner Heart Valve</td>
+            <td>1 Force damage at the start of each Turn (every 6 Seconds), this damage cannot be reduced or removed in
+              any way.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Inner Brain</td>
+            <td>Gain 5 Levels of Exhaustion and fall into a coma.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stomach</td>
+            <td>Food (other than the Locacaca Fruit) may no longer be digested, and stomach acid will begin to leak into
+              the body after 6 hours.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Small Intestinal Fragment</td>
+            <td>Results in half-digested food being pushed into the body, outside of the organs.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Anus</td>
+            <td>Improper solid waste disposal, which will eventually result in an intestinal rupture, likely within the
+              next few days.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Left Arm</td>
+            <td>Past the elbow, the left arm becomes unusable.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Right Arm</td>
+            <td>Past the elbow, the right arm becomes unusable.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Both Feet</td>
+            <td>From the ankles down, the feet become totally unusable and walking speed is reduced by 5 meters.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Lung</td>
+            <td>Chest feels heavy, half lung capacity, easily winded and, cannot take the Dash Action.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Left Ear</td>
+            <td>Lose hearing in the left ear.</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Right Ear</td>
+            <td>Lose hearing in the right ear.</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Jaw</td>
+            <td>Inability to speak properly or chew food normally.</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Left Eye</td>
+            <td>Lose sight in the left eye.</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Right Eye</td>
+            <td>Lose sight in the right eye.</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Appendix</td>
+            <td>Minor, continued discomfort in the abdomen.</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Left Kidney</td>
+            <td>The left kidney shuts down completely.</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Right Kidney</td>
+            <td>The right kidney shuts down completely.</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Teeth</td>
+            <td>Regular teeth fall out and are replaced with stone teeth in the same shape.</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Nose</td>
+            <td>Lose ability to breathe through the nose, as well as all sense of smell. This also alters the sense of
+              taste.</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Reproductive Organs</td>
+            <td>Sterility</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 class="display-heading">
+        Random Stand Type Table
+      </h4>
+      <table class="tablez table-striped minor center">
+        <thead>
+          <tr>
+            <th id="rand-type">d100</th>
+            <th>Stand Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1-35</td>
+            <td>Power</td>
+          </tr>
+          <tr>
+            <td>36-49</td>
+            <td>Ranged</td>
+          </tr>
+          <tr>
+            <td>50-69</td>
+            <td>Enhancement</td>
+          </tr>
+          <tr>
+            <td>70-79</td>
+            <td>Remote</td>
+          </tr>
+          <tr>
+            <td>80-89</td>
+            <td>Ability</td>
+          </tr>
+          <tr>
+            <td>90-93</td>
+            <td>Independent</td>
+          </tr>
+          <tr>
+            <td>94-97</td>
+            <td>Hive</td>
+          </tr>
+          <tr>
+            <td>98-99</td>
+            <td>Revenge</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Act</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr id="lineG" />
+  <div id="weaponCont">
+    <h2 id="weaponTitle" class="display-heading"><a id="9"></a>
+      Weapon Reference
+    </h2>
+    <div id="weaponBox" class="content">
+      <h4 class="display-heading center">
+        Weapon Attributes
+      </h4>
+      <ul>
+        <li>
+          <b>AC Bonus</b>: This weapon grants a bonus to your AC while it is equipped.
+        </li>
+        <li>
+          <b>Ambush</b>: This weapon always crits when attacking a Surprised target.
+        </li>
+        <li>
+          <b>Bulky</b>: This weapon must be braced using a Bonus Action in order to attack with it. Once braced, you
+          remain braced until you move.
+        </li>
+        <li>
+          <b>Complex</b>: This weapon takes a total of three Attacks to reload.
+        </li>
+        <li>
+          <b>Concealed</b>: This weapon grants a bonus to any Check made to conceal it.
+        </li>
+        <li>
+          <b>Conductive</b>: Energy currents, such as electricity or Ripple, may be run through this weapon."
+        </li>
+        <li>
+          <b>Firearm</b>: This weapon makes a loud sound which can be heard up to 0.5km away. It also jams if a natural
+          1
+          is rolled while using it. This weapon's ammunition doesn't function when wet.
+        </li>
+        <li>
+          <b>Flame</b>: When a targeted creature or object takes fire damage from this weapon, it is set ablaze
+          (assuming
+          the target is flammable).
+        </li>
+        <li>
+          <b>Hunker</b>: While holding this item, if you've not moved this turn, you may gain Cover as a Bonus Action
+          until the start of your turn, though this also reduces your Movement Speed to 0.
+        </li>
+        <li>
+          <b>Light</b>: This weapon is light and easy to handle, allowing you to make an additional attack using another
+          Light weapon in your other hand as a Bonus Action.
+        </li>
+        <li>
+          <b>Point Blank</b>: This weapon does not impose Disadvantage if fired within melee.
+        </li>
+        <li>
+          <b>Radius</b>: This weapon forces all creatures within a certain radius of the target to make a Dexterity
+          Saving
+          Throw, taking half damage on success and full damage on failure.
+        </li>
+        <li>
+          <b>Ranged</b>: This weapon can fire up to its Short Range, or as far as its Long Range with Disadvantage.
+          Firing
+          within melee imposes Disadvantage.
+        </li>
+        <li>
+          <b>Reach</b>: This weapon can attack targets from an additional meter away.
+        </li>
+        <li>
+          <b>Reliable</b>: This weapon does not jam if you roll a natural 1.
+        </li>
+        <li>
+          <b>Reload</b>: This weapon can be used a limited amount of times before needing to be reloaded. Reloading
+          takes
+          a full Attack.
+        </li>
+        <li>
+          <b>Remote</b>: This weapon can be detonated as a Bonus Action from up to 1km away.
+        </li>
+        <li>
+          <b>Return</b>: After making a Thrown Weapon attack with the weapon, you may use your Reaction to catch it,
+          putting it back in your inventory.
+        </li>
+        <li>
+          <b>Siege</b>: This weapon deals double damage to objects.
+        </li>
+        <li>
+          <b>Timer</b>: A timer may be set on this weapon, detonating it once the timer runs out. The timer may be set
+          for
+          up to 12 hours.
+        </li>
+        <li>
+          <b>Thrown</b>: This weapon can be thrown up to its Short Range, or as far as its Long Range with Disadvantage.
+          Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case
+          it is destroyed).
+        </li>
+        <li>
+          <b>Two-Handed</b>: This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be
+          carried (but not used) with one hand if desired.
+        </li>
+      </ul>
+      <hr />
+      <div id="weapFeats">
+        <p>Demolitionist</p>
+        <ul>
+          <li>Proficiency in Explosives &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Explosive Save DC +2</li>
+          <li>Advantage on anything explosive related</li>
+        </ul>
+        <p>Heavy Specialization</p>
+        <ul>
+          <li>Proficiency in Heavy Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>+2 to your AC until start of next turn when bracing with a heavy weapon</li>
+        </ul>
+        <p>Martial Arts</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Expertise in unarmed strikes and stand melee</li>
+          <li>1d8 unarmed strikes</li>
+          <li>When Grappling or Shoving, you can use Dex or Str</li>
+          <li>Full action Grapple, If you are successful, the target is restrained indefinitely until you use your
+            action
+            for something else or you move.</li>
+        </ul>
+        <p>Melee Specialization</p>
+        <ul>
+          <li>Proficiency in Melee Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>1/turn you may reroll damage dice for a melee weapon</li>
+          <li>While wielding yo can take the 5e Parry (Add PB to AC) reaction if hit</li>
+        </ul>
+        <p>Professional Weapon Training</p>
+        <ul>
+          <li>Proficiency in Simple and Martial Weapons &amp; Expertise in them if you already are proficient with them.
+          </li>
+        </ul>
+        <p>Rifle Specialization</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>A 19 or 20 is a crit with Rifles</li>
+          <li>No disadvantage at long range with Rifle</li>
+        </ul>
+        <p>Shotgun Specialization</p>
+        <ul>
+          <li>Proficiency in Shotguns &amp; Expertise in them if you already are proficient with them.</li>
+          <li>When shooting medium or smaller creature at short range, you can choose to halve damage to force them to
+            make a DC 8 + Con Mod +PB Con save, On a fail they are knocked prone</li>
+        </ul>
+        <p>Sidearm Specialization</p>
+        <ul>
+          <li>Proficiency in Sidearms &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Free action reload with Sidearms</li>
+        </ul>
+        <p>Simple Weapon Focus</p>
+        <ul>
+          <li>Proficiency in Simple Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Add PB to damage on Melee, or a second time to attack roll with ranged</li>
+        </ul>
+        <p>Tavern Brawler</p>
+        <ul>
+          <li>Proficiency in Improvised Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>When attacking on your turn, you may make an additional improvised weapon attack as a bonus action, or
+            Grapple/Shove a target as a bonus action</li>
+        </ul>
+        <p>Thrown Weapon Specialization</p>
+        <ul>
+          <li>Proficiency in Thrown Weapons &amp; Expertise in them if you already are proficient with them.</li>
+          <li>Draw a Thrown weapon as a free action</li>
+          <li>Throw 2 same thrown/improvised weapons as a single attack. This cannot be done with spin spheres</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <hr id="lineI" />
   <div id="myTrack">
     <h2 id="theTrack" class="display-heading">Ultimate Tracker</h2>
-<div id="ultTrack" class="content">
- <Iframe src="https://www.jojodnd.com/resources/community/Assets/Tracker/tracker.html"></Iframe>
-</div>
+    <div id="ultTrack" class="content">
+      <Iframe src="https://www.jojodnd.com/resources/community/Assets/Tracker/tracker.html"></Iframe>
+    </div>
   </div>
   <hr id="lineJ" />
   <div id="actionEcon">
     <h2 id="economy" class="display-heading">Action Economy Reference</h2>
-<div id="actioN" class="content">
- 
-</div>
-  </div>
-  
-</body>
-
+    <div id="actioN" class="content">
+      <h3 class="display-heading center">Action Economy Reference</h3>
+      <div class="table-container">
+      <table id="box"></table></div>
+      <small><i>Thank You SlickNinja125 for getting all the data :)</i></small>
+      </div>
+      
+</div><div style="padding-bottom: 20px;"></div>
 </html>

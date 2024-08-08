@@ -250,3 +250,41 @@ a {
 a:hover {
   color: rgb(17, 0, 255);
 }
+
+
+table#box, table#box > * > * > * {
+  border: 3px solid black;
+  z-index: 3;
+}
+
+table#box > thead > * > * {
+  text-align: center;
+
+}
+
+.table-container {
+  max-width: 100%;
+  max-height: 500px; /* Set a maximum height for the container */
+  overflow: auto; /* Enable both horizontal and vertical scrolling */
+  border: 5px solid #800080; /* Match the border color with your design */
+  border-radius: 10px; /* Rounded borders to match your design */
+  
+}
+table#box {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative; /* Needed for the sticky header */
+}
+table#box > th, table#box > td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #800080; /* Match the border color with your design */
+}
+table#box > thead {
+  background-color: #800080; /* Match the header color with your design */
+  color: #FFD700; /* Text color to match your design */
+  position: sticky;
+  top: 0; /* Sticky position at the top */
+  z-index: 2; /* Ensure the header stays on top of the other content */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
