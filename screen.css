@@ -264,27 +264,33 @@ table#box > thead > * > * {
 
 .table-container {
   max-width: 100%;
-  max-height: 500px; /* Set a maximum height for the container */
-  overflow: auto; /* Enable both horizontal and vertical scrolling */
-  border: 5px solid #800080; /* Match the border color with your design */
-  border-radius: 10px; /* Rounded borders to match your design */
+  max-height: 500px;
+  overflow: auto;
+  border: 5px solid #800080;
+  border-radius: 10px; 
   
 }
 table#box {
   width: 100%;
   border-collapse: collapse;
-  position: relative; /* Needed for the sticky header */
+  position: relative; 
+  padding: 0;
 }
 table#box > th, table#box > td {
   padding: 8px;
   text-align: left;
-  border: 1px solid #800080; /* Match the border color with your design */
+  border: 1px solid #800080;
+  margin: 0px;
 }
 table#box > thead {
-  background-color: #800080; /* Match the header color with your design */
-  color: #FFD700; /* Text color to match your design */
+  background-color: #800080; 
+  color: #FFD700;
   position: sticky;
-  top: 0; /* Sticky position at the top */
-  z-index: 2; /* Ensure the header stays on top of the other content */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  top: 0; 
+  z-index: 2;
+  border: 3px solid #800080;
+  -webkit-box-shadow: inset -7px -8px 0px 200px rgba(128,0,128,1);
+-moz-box-shadow: inset -7px -8px 0px 200px rgba(128,0,128,1);
+box-shadow: inset -7px -8px 0px 200px rgba(128,0,128,1);
 }
+
