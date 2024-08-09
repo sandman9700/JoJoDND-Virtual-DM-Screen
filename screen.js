@@ -138,25 +138,3 @@ $("#actionEconomy").click(function () {
   createTable();
 });
 
-if (localStorage.getItem("general")) {
-  $("#general").val(localStorage.getItem("general"));
-}
-if (localStorage.getItem("ability")) {
-  $("#ability").val(localStorage.getItem("ability"));
-}
-if (localStorage.getItem("plan")) {
-  $("#plan").val(localStorage.getItem("plan"));
-}
-
-// Save items to localStorage on textarea change
-$("#general").on("change", "textarea", function() {
-  localStorage.setItem("general", $(this).val());
-});
-
-$("#ability").on("change", "textarea", function(){
-  localStorage.setItem("ability", $(this).val());
-});
-
-$("#plan").on("change", "textarea", function() {
-  localStorage.setItem("plan", $(this).val());
-});
